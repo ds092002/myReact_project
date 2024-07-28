@@ -3,6 +3,23 @@ import logo from "../assets/asset-0.png";
 
 const Navbar = () => {
   return (
+    <div>
+    <div className="bg-black w-full py-2 text-white text-sm font-semibold">
+        <nav className="flex justify-between">
+        <ul className="flex items-center space-x-6 ml-52">
+          <li><a href="">English</a></li>
+          <li><a href="">USD</a></li>
+          <li><a href="">Free Shipping On All Orders Over $100</a></li>
+        </ul>
+        <ul className="flex items-center justify-between space-x-5 mr-52">
+          <li className="text-yellow-500 space-x-2"><i class="fa-solid fa-bolt-lightning"></i><a href="">Flash Sale</a></li>
+          <li><a href="">Track Order</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+        </nav>
+    </div>
     <div className="bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-8">
         <div className="flex items-center">
@@ -91,7 +108,9 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+
       </div>
+    </div>
     </div>
   );
 };
