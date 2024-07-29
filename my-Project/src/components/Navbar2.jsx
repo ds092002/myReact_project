@@ -19,6 +19,27 @@ export default function App() {
 
   return (
     <>
+      <MDBNavbar>
+          <MDBNavbarNav>
+          <div className="bg-black w-full py-2 text-sm font-semibold">
+        <nav className="flex justify-between">
+        <ul className="flex items-center space-x-6 ml-52">
+          <li><a href="" className="text-white">English</a></li>
+          <li><a href="" className="text-white">USD</a></li>
+          <li><a href="" className="text-white">Free Shipping On All Orders Over $100</a></li>
+        </ul>
+        <ul className="flex items-center justify-between space-x-5 mr-52">
+          <li className="text-[#FCC904] space-x-2"><i class="fa-solid fa-bolt-lightning"></i><a href="" className="text-[#FCC904]">Flash Sale</a></li>
+          <li><a href="" className="text-white">Track Order</a></li>
+          <li><a href="" className="text-white">About</a></li>
+          <li><a href="" className="text-white">Contact</a></li>
+          <li><a href="" className="text-white">Blog</a></li>
+        </ul>
+        </nav>
+    </div>
+          </MDBNavbarNav>
+        {/* </MDBContainer> */}
+      </MDBNavbar>
       <MDBNavbar expand="lg" light bgColor="light">
         <MDBContainer className="py-3">
           <MDBNavbarToggler
@@ -81,7 +102,7 @@ export default function App() {
                       <option>&nbsp;&nbsp;55" TVs</option>
                       <option>&nbsp;&nbsp;65" TVs</option>
                       <option>&nbsp;&nbsp;OLED TVs</option>
-                      <option>&nbsp;&nbsp;QLED TVs</option>
+                      <opt>&nbsp;&nbsp;QLED TVs</opt>
                     </select>
                     <span className="h-9 w-1 bg-gray-300 z-40"></span>
                     <input
@@ -93,33 +114,33 @@ export default function App() {
                   </div>
                 </div>
               </MDBInputGroup>
-            <div className="d-flex align-items-center ml-10">
-              <MDBNavbarItem className="d-flex align-items-center space-x-9">
+            <div className="d-flex align-items-center pl-[5%]">
+              <MDBNavbarItem className="d-flex align-items-center space-x-7">
                 <MDBNavbarLink href="#">
-                  <i className="fa-regular fa-heart text-3xl relative">
+                  <i className="fa-regular fa-heart text-3xl relative text-black">
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                       0
                     </span>
                   </i>
                 </MDBNavbarLink>
                 <MDBNavbarLink href="#" className="d-flex align-items-center">
-                  <i className="fa-regular fa-user text-3xl"></i>
+                  <i className="fa-regular fa-user text-3xl text-black"></i>
                   <div className="flex flex-col ml-2">
                     <span className="text-[#848484] text-[12px]">
                       My Account
                     </span>
-                    <span className="text-sm font-bold">Login</span>
+                    <span className="text-sm font-bold text-black">Login</span>
                   </div>
                 </MDBNavbarLink>
                 <MDBNavbarLink href="#" className="d-flex align-items-center">
-                  <i className="fa-solid fa-cart-shopping text-3xl relative">
+                  <i className="fa-solid fa-cart-shopping text-3xl relative text-black">
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                       0
                     </span>
                   </i>
                   <div className="flex flex-col ml-2">
                     <span className="text-[#848484] text-[12px]">My Cart</span>
-                    <span className="text-sm font-bold">$0.00</span>
+                    <span className="text-sm font-bold text-black">$0.00</span>
                   </div>
                 </MDBNavbarLink>
               </MDBNavbarItem>

@@ -23,10 +23,10 @@ const Navbar = () => {
     <div className="bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-8">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-12 w-42" />
+          <img src={logo} alt="Logo" className="h-16 w-36" />
         </div>
         <div className="flex-grow ml-24">
-          <div className="flex items-center rounded-lg shadow-md overflow-hidden w-[800px] border-[#0068C8] border-2 bg-gray-100">
+          <div className="flex items-center rounded-lg shadow-md overflow-hidden w-[710px] border-[#0068C8] border-2 bg-gray-100">
             <select className="h-full px-7 py-[12px] bg-white border-r border-gray-300 text-gray-700 focus:outline-none">
               <option className="">All Categories</option>
               <option>Camera</option>
@@ -69,7 +69,7 @@ const Navbar = () => {
             </select>
             <input
               type="text"
-              className="w-[800px] px-4 py-3 text-gray-700 focus:outline-none"
+              className="w-[710px] px-4 py-3 text-gray-700 focus:outline-none"
               placeholder="Search for products"
             />
             <button className="px-6 py-3 bg-[#0068C8] text-white font-semibold rounded-rb-lg">

@@ -15,9 +15,7 @@ const Home = () => {
                 Best Offers From<br />Games And More
               </h1>
               <p className='text-black text-md'>GREAT SAVINGS & FREE DELIVERY</p>
-              <button className='mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white transition duration-300'>
-                <a href="#" className='text-white text-md hover:text-[#0068C8] transition duration-300'>SHOP NOW</a>
-              </button>
+              <a href="#" className='text-gray-50 text-md hover:text-[#0068C8] transition duration-300 mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white'>SHOP NOW</a>
             </div>
           </div>
           <div className='relative'>
@@ -28,8 +26,7 @@ const Home = () => {
                 Headphones At<br />Great Low Prices
               </h1>
               <p className='text-black text-md'>GREAT SAVINGS & FREE DELIVERY</p>
-
-              <a href="" className='mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white hover:text-blue-400 transition duration-300'><button  className='text-white text-md'>SHOP NOW</button></a>
+              <a href="" className='mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white text-gray-50 text-md  hover:text-[#00668C8] transition duration-300'>SHOP NOW</a>
             </div>
           </div>
         </div>
