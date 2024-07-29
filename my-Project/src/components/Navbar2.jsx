@@ -13,13 +13,19 @@ import {
   MDBIcon,
   MDBInputGroup,
 } from "mdb-react-ui-kit";
+import { CiHeart} from "react-icons/ci";
+import { FiUser } from "react-icons/fi";
+import { BsCart3 } from "react-icons/bs";
+
 
 export default function App() {
   const [openNavNoTogglerThird, setOpenNavNoTogglerThird] = useState(false);
 
+
+
   return (
     <>
-      <MDBNavbar>
+      <MDBNavbar className="fixed">
           <MDBNavbarNav>
           <div className="bg-black w-full py-2 text-sm font-semibold">
         <nav className="flex justify-between">
@@ -110,21 +116,24 @@ export default function App() {
                       className="w-[710px] px-4 py-2 bg-gray-100 text-gray-700 focus:outline-none"
                       placeholder="Search for products"
                     />
-                    <MDBBtn className="bg-[#0068c8] h-12 w-36 px-[30px]"><span className="text-[16px]">SEARCH</span></MDBBtn>
+                    <button className="bg-[#0068C8] h-12 w-36 px-[30px] text-[16px] text-white font-semibold">SEARCH</button>
                   </div>
                 </div>
               </MDBInputGroup>
-            <div className="d-flex align-items-center pl-[5%]">
+            <div className="d-flex align-items-center pl-[6%]">
               <MDBNavbarItem className="d-flex align-items-center space-x-7">
                 <MDBNavbarLink href="#">
-                  <i className="fa-regular fa-heart text-3xl relative text-black">
+                  <i className=" text-4xl relative text-black">
+                    <CiHeart/>
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                       0
                     </span>
                   </i>
                 </MDBNavbarLink>
                 <MDBNavbarLink href="#" className="d-flex align-items-center">
-                  <i className="fa-regular fa-user text-3xl text-black"></i>
+                  <i className="text-4xl text-black">
+                    <FiUser/>
+                  </i>
                   <div className="flex flex-col ml-2">
                     <span className="text-[#848484] text-[12px]">
                       My Account
@@ -133,7 +142,8 @@ export default function App() {
                   </div>
                 </MDBNavbarLink>
                 <MDBNavbarLink href="#" className="d-flex align-items-center">
-                  <i className="fa-solid fa-cart-shopping text-3xl relative text-black">
+                  <i className="text-4xl relative text-black">
+                    <BsCart3/>
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                       0
                     </span>
