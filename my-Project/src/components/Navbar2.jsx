@@ -18,10 +18,8 @@ import { FiUser } from "react-icons/fi";
 import { BsCart3 } from "react-icons/bs";
 
 
-export default function App() {
+const Navbar = () => {
   const [openNavNoTogglerThird, setOpenNavNoTogglerThird] = useState(false);
-
-
 
   return (
     <>
@@ -162,3 +160,5 @@ export default function App() {
     </>
   );
 }
+
+export default Navbar
