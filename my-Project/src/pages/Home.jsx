@@ -16,6 +16,10 @@ import apple from "../assets/apple.png";
 import xbox from "../assets/xbox.jpg";
 import s23 from '../assets/s23.jpg'
 import { FaStar } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
+import { CiSearch } from "react-icons/ci";
+import { GoStack } from "react-icons/go";
+import { BsCart3 } from "react-icons/bs";
 
 const Home = () => {
   const logo = [
@@ -36,7 +40,7 @@ const Home = () => {
   return (
     <div className="mt-10">
       <div>
-        <div className="flex flex-row justify-center items-center gap-7">
+        <div className="flex lg:flex-row sm:flex-col  justify-center items-center gap-7">
           <div className="relative">
             <img src={image1} alt="" className="rounded-xl" />
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-20">
@@ -98,11 +102,11 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="mt-24 container mb-5">
+      <div className="mt-24 mx-56 mb-5">
       <div>
         <h2 className="text-black font-semibold">Deals of the day</h2>
         <hr />
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 mt-8">
           <a
             href="#"
             className="flex flex-col items-center relative  bg-white border-2 border-blue-400 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
@@ -114,9 +118,15 @@ const Home = () => {
               src={xbox}
               alt="Xbox"
             />
+            <div className="mb-32 mt-5 pr-5 space-x-1 text-2xl">
+            <i className="rounded-full h-1 w-1"><CiHeart/></i>
+            <i><CiSearch/></i>
+            <i><GoStack/></i>
+            <i><BsCart3/></i>
+            </div>
             <div className="flex flex-col text-sm justify-between leading-normal text-gray-500">
-              <p className="mt-3 text-sm">Xbox Series</p>
-              <p className=" text-lg text-gray-900 dark:text-white">
+              <p className="mt-3 text-sm hover:text-[#0068C8]">Xbox Series</p>
+              <p className=" text-lg text-gray-900 dark:text-white hover:text-[#0068C8]">
                 Xbox Series S-1TB Gaming All-Digital Console,
                 <br />
                 4K Streaming Media
@@ -158,9 +168,9 @@ const Home = () => {
               src={s23}
               alt="Samsung Galaxy"
             />
-            <div className="flex flex-col text-sm justify-between leading-normal text-gray-500">
+            <div className="flex flex-col text-sm justify-between leading-normal text-gray-500 hover:text-[#0068C8]">
               <p>Samsung Galaxy</p>
-              <h5 className="mb-2 text-xl tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-lg tracking-tight text-gray-900 dark:text-white hover:text-[#0068C8]">
                 Samsung Galaxy S23 Ultra, Factory Unlocked, 512GB
               </h5>
               <div className="flex text-[#FCC904]">
@@ -168,8 +178,8 @@ const Home = () => {
                   <FaStar key={i} />
                 ))}
               </div>
-              <p>
-                $699.99<del>$949.99</del>
+              <p className="text-red-500 text-xl font-semibold ">
+                $699.99<del className="text-gray-500 text-lg  px-2 font-normal">$949.99</del>
               </p>
               <p>Sold: 68/167</p>
               <div className="progress h-[50px] rounded">
@@ -197,6 +207,12 @@ const Home = () => {
             <span className="bg-gray-300 h-2 w-2 rounded-full"></span>
           </div>
         </div>
+      </div>
+    </div>
+    <div>
+      <div className="mt-24 mx-56 mb-5">
+        <h2 className="text-black font-semibold">Daily Bset Sells</h2>
+        <hr />
       </div>
     </div>
     </div>
