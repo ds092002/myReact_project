@@ -112,7 +112,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mt-5 flex justify-center items-center">
+      <div className="mt-5 flex justify-center items-center">
         <div className="grid gap-2 grid-cols-6 p-4 py-2 border-2 border-gray-300 bg-gray-50 rounded-lg ">
           {logo.map((logo, index) => (
             <div
@@ -126,8 +126,8 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </div> */}
-      {/* <div className="mt-24 mx-56 mb-5">
+      </div>
+      <div className="mt-24 mx-56 mb-5">
         <div>
           <h2 className="text-black font-semibold">Deals of the day</h2>
           <hr />
@@ -233,217 +233,227 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
-      <div className="mt-24 mx-56 mb-5 ">
+      </div>
+
+      <div className="mt-24 mx-56 mb-5">
         <div>
           <h2 className="text-black font-semibold">Daily Best Sells</h2>
           <hr />
         </div>
-        <div className="flex justify-between items-start">
-          <div className="flex-2">
-            {/* left Side Card */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="w-[300px]">
-                <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                  <a href="" className="relative">
-                    <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                    <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                    <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                  </a>
-                </div>
-                <div className="p-2">
-                  <div className="flex flex-col">
-                    <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                    <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                  </div>
-                  <div className="flex text-[#FCC904]">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} />
-                    ))}
-                  </div>
-                  <div className="mt-2">
-                    <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                  </div>
-                </div>
+        <div className="grid grid-cols-5 gap-4 p-5">
+          <div className="flex flex-col gap-4">
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
               </div>
-              <div className="w-[300px]">
-                <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                  <a href="" className="relative">
-                    <img src={xbox} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                    <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                    <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                  </a>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
                 </div>
-                <div className="p-2">
-                  <div className="flex flex-col">
-                    <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                    <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                  </div>
-                  <div className="flex text-[#FCC904]">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} />
-                    ))}
-                  </div>
-                  <div className="mt-2">
-                    <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                  </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
                 </div>
-              </div>
-              <div className="w-[300px]">
-                <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                  <a href="" className="relative">
-                    <img src={iphone} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                    <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                    <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                  </a>
-                </div>
-                <div className="p-2">
-                  <div className="flex flex-col">
-                    <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                    <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                  </div>
-                  <div className="flex text-[#FCC904]">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} />
-                    ))}
-                  </div>
-                  <div className="mt-2">
-                    <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-[300px]">
-                <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                  <a href="" className="relative">
-                    <img src={controller} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                    <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                    <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                  </a>
-                </div>
-                <div className="p-2">
-                  <div className="flex flex-col">
-                    <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                    <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                  </div>
-                  <div className="flex text-[#FCC904]">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} />
-                    ))}
-                  </div>
-                  <div className="mt-2">
-                    <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                  </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
                 </div>
               </div>
             </div>
-
-            {/* middle Banner */}
-            <div className="col-span-4 my-4 max-w-[350px] max-h-[650px]">
-              <img src={banner} alt="Banner" className="w-full h-auto" />
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={xbox} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
+                </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={iphone} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
+                </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
+                </div>
+              </div>
+            </div>
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={controller} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
+                </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            {/* Right Side Card */}
-            <div className="">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="w-[300px]">
-                  <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                    <a href="" className="relative">
-                      <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                      <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                      <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                    </a>
-                  </div>
-                  <div className="p-2">
-                    <div className="flex flex-col">
-                      <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                      <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                    </div>
-                    <div className="flex text-[#FCC904]">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} />
-                      ))}
-                    </div>
-                    <div className="mt-2">
-                      <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-[300px]">
-                  <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                    <a href="" className="relative">
-                      <img src={xbox} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                      <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                      <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                    </a>
-                  </div>
-                  <div className="p-2">
-                    <div className="flex flex-col">
-                      <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                      <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                    </div>
-                    <div className="flex text-[#FCC904]">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} />
-                      ))}
-                    </div>
-                    <div className="mt-2">
-                      <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                    </div>
-                  </div>
-                </div>
+          <div className="relative">
+            <img src={banner} alt="" className="h-[730px] w-[600px] rounded-lg" />
+            <div className="absolute bottom-32 left-10">
+              <p className="text-white bg-red-600 lg:text-sm sm:text-[11px] px-2 w-28 rounded-tr-md rounded-b-md">SAVE EXTRA</p>
+              <h3 className="text-black font-semibold mb-4">15% OFF 
+              <br />
+                  Order Above
+              </h3>
+              <a
+                href="#"
+                className=" text-gray-50 text-base hover:text-[#0068C8] transition duration-300 mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white"
+              >SHOP NOW</a>
+            </div>
+          </div>
 
-                <div className="w-[300px]">
-                  <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                    <a href="" className="relative">
-                      <img src={iphone} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                      <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                      <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                    </a>
-                  </div>
-                  <div className="p-2">
-                    <div className="flex flex-col">
-                      <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                      <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                    </div>
-                    <div className="flex text-[#FCC904]">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} />
-                      ))}
-                    </div>
-                    <div className="mt-2">
-                      <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                    </div>
-                  </div>
+          <div className="flex flex-col gap-4">
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
                 </div>
-                <div className="w-[300px]">
-                  <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
-                    <a href="" className="relative">
-                      <img src={controller} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                      <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                      <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
-                    </a>
-                  </div>
-                  <div className="p-2">
-                    <div className="flex flex-col">
-                      <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
-                      <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
-                    </div>
-                    <div className="flex text-[#FCC904]">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} />
-                      ))}
-                    </div>
-                    <div className="mt-2">
-                      <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
-                    </div>
-                  </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
+                </div>
+              </div>
+            </div>
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={xbox} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
+                </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={iphone} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
+                </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
+                </div>
+              </div>
+            </div>
+            <div className="w-[200px]">
+              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+                <a href="" className="relative">
+                  <img src={controller} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                </a>
+              </div>
+              <div className="p-2">
+                <div className="flex flex-col">
+                  <a href="" className="inline-flex items-center text-sm text-gray-500">Laptops</a>
+                  <a href="" className="text-base text-gray-900 mt-2 hover:text-[#0068C8]">MacBook Pro 13.3"<br />16GB/512GB Silver</a>
+                </div>
+                <div className="flex text-[#FCC904]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <div className="mt-2">
+                  <p className="text-red-600 text-xl font-semibold">$1527.00 <del className="text-base text-gray-500 font-normal">$1795.00</del></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="mt-24 mb-5">
+
+
+      <div className="mt-24 mb-5">
         <div>
           <div className="flex justify-center items-center gap-7">
             <div className="relative">
@@ -483,8 +493,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
-      {/* <div className="mt-24 mx-56">
+      </div>
+      <div className="mt-24 mx-56">
         <div className="flex gap-32">
           <div>
             <p className="text-3xl font-semibold text-black">Trending Products</p>
@@ -787,8 +797,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
-      {/* <div className="mt-24">
+      </div>
+      <div className="mt-24">
         <div className="relative">
           <img src={camera} alt="" className="" />
           <div className="absolute top-0 left-52 w-full h-full flex flex-col justify-start items-start mt-32">
@@ -808,8 +818,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div> */}
-      {/* <div className="mt-24 mx-56">
+      </div>
+      <div className="mt-24 mx-56">
         <div>
           <h3 className="text-black font-semibold">Recently Viewed Products</h3>
           <hr />
@@ -933,15 +943,15 @@ const Home = () => {
 
           </div>
         </div>
-      </div> */}
-      {/* <div className="mt-24 mx-56">
+      </div>
+      <div className="mt-24 mx-56">
         <div className="relative">
           <img src={watch} alt="" className="rounded-lg" />
           <p className="absolute top-[40%] right-[30%] font-semibold flex justify-center items-center text-2xl text-white">Free Shipping On Order Over $500 - Using code: Freeship</p>
           <p className="absolute border-2 top-3 left-5 w-[93%] h-24 border-dashed border-white rounded-lg"></p>
         </div>
-      </div> */}
-      {/* <div className="mt-24 mx-56">
+      </div>
+      <div className="mt-24 mx-56">
         <div className="flex gap-20">
           <div className="flex items-start">
             <i className="text-8xl text-[#0068C8] mt-3"><TbTruckDelivery /></i>
@@ -972,7 +982,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -23,7 +23,7 @@ const OrderTrack = () => {
                   type=""
                   id=""
                   placeholder='Found in your order confirmation email.'
-                  className="mt-1 w-[60%] p-2 border hover:border-[#0068C8] border-gray-300 rounded text-sm py-3"
+                  className="mt-1 w-[60%] p-2 border border-gray-300 rounded text-sm py-3"
                   required
                 />
               </div>
