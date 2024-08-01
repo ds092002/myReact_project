@@ -66,8 +66,8 @@ const Home = () => {
     <div className="mt-10 mx-2">
       <div>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-7">
-          <div className="relative w-full h-full sm:w-auto sm:h-auto">
-            <img src={image1} alt="" className="rounded-xl w-full h-full sm:w-auto sm:h-48"/>
+          <div className="relative w-full">
+            <img src={image1} alt="" className="rounded-xl w-full"/>
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-20">
               <p className="text-white bg-red-600 lg:text-sm sm:text-[11px] px-2 rounded-tr-md rounded-b-md">
                 WEEKEND DEAL
@@ -88,8 +88,8 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="relative w-full sm:w-auto">
-            <img src={image2} alt="" className="rounded-xl w-full sm:w-auto" />
+          <div className="relative w-full">
+            <img src={image2} alt="" className="rounded-xl w-full " />
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-20">
               <p className="text-white bg-red-600 text-sm px-2 rounded-tr-md rounded-b-md">
                 NEW PRODUCTS

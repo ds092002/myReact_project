@@ -7,10 +7,10 @@ import OrderTrack from './OrderTrack'
 const Layout = () => {
   return (
     <div>
-        {/* <Home/> */}
+        <Home/>
         {/* <Error404page/> */}
         {/* <RegisterPage/> */}
-        <OrderTrack/>
+        {/* <OrderTrack/> */}
     </div>
   )
 }
