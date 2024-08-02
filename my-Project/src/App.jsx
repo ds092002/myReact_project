@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       {/* <Navbar2 /> */}
+      {/* <Navbar/> */}
       <Layout/>
       {/* <Footer/> */}
       <Footer2/>
