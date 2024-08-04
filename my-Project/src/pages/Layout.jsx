@@ -4,6 +4,7 @@ import Error404page from './Error404page'
 import RegisterPage from './RegisterPage'
 import OrderTrack from './OrderTrack'
 import Contact from './ContactUS'
+import ShopList from './ShopList'
 
 const Layout = () => {
   return (
@@ -12,7 +13,8 @@ const Layout = () => {
         {/* <Error404page/> */}
         {/* <RegisterPage/> */}
         {/* <OrderTrack/> */}
-        <Contact/>
+        {/* <Contact/> */}
+        <ShopList/>
     </div>
   )
 }
