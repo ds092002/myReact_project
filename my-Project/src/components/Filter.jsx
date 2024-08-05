@@ -4,7 +4,7 @@ const Filter = () => {
   return (
     <div className='w-3/4'>
     <div className="p-5 w-64 border-r  border-gray-300">
-      <h6 className="font-bold mb-2">Price</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Price</h6>
       <div className="flex flex-col mb-4">
         {['$500 & Under', '$500 - $999', '$1,000 - $1,999', '$2,000 - $5,000', '$5,000 & Over'].map((priceRange, index) => (
           <label key={index} className="flex items-center mb-2">
@@ -14,7 +14,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className="my-4" />
-      <h6 className="font-bold mb-2">Brands</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Brands</h6>
       <div className="flex flex-col">
         {[
           'Acer        (6)',
@@ -38,7 +38,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className="my-4" />
-      <h6 className="font-bold mb-2">Screen Size</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Screen Size</h6>
       <div className="flex flex-col">
         {[
           '0 - 6" (3)',
@@ -53,7 +53,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">Hard Drive Size</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Hard Drive Size</h6>
       <div className="flex flex-col">
         {[
           '1.0TB (3)',
@@ -68,7 +68,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">RAM</h6>
+      <h6 className="font-bold mb-2 text-[#000]">RAM</h6>
       <div className="flex flex-col">
         {[
           '12GB & Up (3)',
@@ -82,7 +82,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">Operating System</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Operating System</h6>
       <div className="flex flex-col">
         {[
           'Android (1)',
@@ -97,7 +97,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">Laptop Computer Type</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Laptop Computer Type</h6>
       <div className="flex flex-col">
         {[
           '2-in-1s (3)',
@@ -113,7 +113,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">Storage Capacity</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Storage Capacity</h6>
       <div className="flex flex-col">
         {[
           '128GB (3)',
@@ -127,7 +127,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">Color</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Color</h6>
       <div className="flex flex-col">
         {[
           'Black (33)',
@@ -148,7 +148,7 @@ const Filter = () => {
         ))}
       </div>
       <hr className='my-4'/>
-      <h6 className="font-bold mb-2">Condition</h6>
+      <h6 className="font-bold mb-2 text-[#000]">Condition</h6>
       <div className="flex flex-col">
         {[
           'New (9)',
