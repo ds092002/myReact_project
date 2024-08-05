@@ -2,8 +2,9 @@ import React from 'react';
 
 const Filter = () => {
   return (
-    <div className='w-3/4'>
-    <div className="p-5 w-64 border-r  border-gray-300">
+    <div className=''>
+    <aside className='container'>
+    <div className="p-5 ml-60 w-72 border-r  border-gray-300">
       <h6 className="font-bold mb-2 text-[#000]">Price</h6>
       <div className="flex flex-col mb-4">
         {['$500 & Under', '$500 - $999', '$1,000 - $1,999', '$2,000 - $5,000', '$5,000 & Over'].map((priceRange, index) => (
@@ -163,9 +164,9 @@ const Filter = () => {
           </label>
         ))}
       </div>
-    </div>
-
-    </div>
+     </div>
+    </aside>
+  </div>
   );
 };
 

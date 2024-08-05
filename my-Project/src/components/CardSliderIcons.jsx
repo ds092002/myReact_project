@@ -73,7 +73,7 @@ const MultiCardCarousel = () => {
     if (isHovering) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-      }, 2000); // Adjust the speed as needed
+      }, 4000); // Adjust the speed as needed
       return () => clearInterval(interval);
     }
   }, [isHovering]);
