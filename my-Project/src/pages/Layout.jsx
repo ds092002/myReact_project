@@ -5,6 +5,7 @@ import RegisterPage from './RegisterPage'
 import OrderTrack from './OrderTrack'
 import Contact from './ContactUS'
 import ShopList from './ShopList'
+import BlogPage from './Blog'
 
 const Layout = () => {
   return (
@@ -15,6 +16,7 @@ const Layout = () => {
         {/* <OrderTrack/> */}
         {/* <Contact/> */}
         <ShopList/>
+        {/* <BlogPage/> */}
     </div>
   )
 }
