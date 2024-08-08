@@ -11,7 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Cartcard = () => {
     return (
         <div className=''>
-            <div>
+            <div className=''>
                 <div className='grid grid-cols-12 gap-4 py-4 border-b mb-5 border-gray-200 items-center'>
                     <a href='' className='col-span-6 flex items-center text-[#000]'>
                         <img src={s23} alt="" className='w-24 h-24 object-cover mr-4' />
