@@ -8,6 +8,8 @@ import ShopList from './ShopList'
 import BlogPage from './Blog'
 import WhishList from './WhishList'
 import Cart from './Cart'
+import About from './AboutUs'
+import ProductGrid from './ProductGrid'
 
 const Layout = () => {
   return (
@@ -20,7 +22,9 @@ const Layout = () => {
         {/* <ShopList/> */}
         {/* <BlogPage/> */}
         {/* <WhishList/> */}
-        <Cart/>
+        {/* <Cart/> */}
+        {/* <About/> */}
+        <ProductGrid/>
     </div>
   )
 }
