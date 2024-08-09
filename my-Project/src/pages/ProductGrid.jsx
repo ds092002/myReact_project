@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductGridCard from '../components/ProductGridCard'
 
 import image1 from '../assets/product1.jpg'
 import image2 from '../assets/product2.jpg'
@@ -95,7 +96,7 @@ const ProductGrid = () => {
                             </div>
                             <button
                                 type="button"
-                                className="h-11 w-full rounded-md bg-[#0068C8] px-7 py-2 text-sm font-semibold text-[#fff] shadow-sm hover:bg-[#fff] hover:border-1 hover:border-[#0068C8] hover:text-[#000] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                                className="h-11 w-full rounded-md bg-[#0068C8] px-7 py-2.5 text-sm font-semibold text-[#fff] shadow-sm hover:bg-[#fff] hover:border-1 hover:border-[#0068C8] hover:text-[#000] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                             >
                                 Add to cart
                             </button>
@@ -247,6 +248,9 @@ const ProductGrid = () => {
                 </div>
             </div>
 
+            <div>
+                <ProductGridCard/>
+            </div>                    
         </div>
     )
 }
