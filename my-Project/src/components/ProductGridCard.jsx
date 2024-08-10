@@ -6,9 +6,9 @@ import { FaStar } from "react-icons/fa";
 const ProductGridCard = () => {
   return (
     <div>
-   <div className="p-4 hover:border-2 hover:border-blue-700 max-w-64 rounded-lg  text-white hover:text-gray-700">
+   <div className="p-4 hover:border-2 hover:border-blue-700 max-w-64 rounded-lg  text-[#fff] hover:text-gray-700">
       <div className="flex items-center justify-center mb-8 relative">
-        <div className="absolute top-2 left-0 bg-blue-900 text-white px-2 rounded-lg text-sm py-1">
+        <div className="absolute top-2 left-0 bg-blue-900 text-[#fff] px-2 rounded-lg text-sm py-1">
           45%
         </div>
         <img
@@ -40,7 +40,7 @@ const ProductGridCard = () => {
       <button className="my-4 h-14 w-full flex items-center text-[#000] hover:text-[#fff] justify-center border-1 border-[#0068C8] hover:bg-[#0068C8] transition duration-250 rounded-lg">
         Add to Cart
       </button>
-      <div className="list-disc">
+      <div className="">
         RAM: 16GB
         <br />
         Hard Drive: 265GB SSD

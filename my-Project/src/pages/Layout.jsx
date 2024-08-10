@@ -19,7 +19,7 @@ const Layout = () => {
         {/* <RegisterPage/> */}
         {/* <OrderTrack/> */}
         {/* <Contact/> */}
-        {/* <ShopList/> */}
+        <ShopList/>
         {/* <BlogPage/> */}
         {/* <WhishList/> */}
         {/* <Cart/> */}

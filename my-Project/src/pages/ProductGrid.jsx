@@ -248,7 +248,11 @@ const ProductGrid = () => {
                 </div>
             </div>
 
-            <div>
+            <div className='grid grid-cols-1 lg:grid-cols-5'>
+                <ProductGridCard/>
+                <ProductGridCard/>
+                <ProductGridCard/>
+                <ProductGridCard/>
                 <ProductGridCard/>
             </div>                    
         </div>
