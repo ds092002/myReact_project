@@ -457,7 +457,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <nav>
+      <nav className="">
         <div className="bg-white border-b">
           <div className=" mx-60 flex items-center justify-between py-8">
             <div className="flex items-center">

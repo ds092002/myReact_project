@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const ProductGridCard = () => {
   return (
-    <div>
+    <div className='font-'>
    <div className="p-4 hover:border-2 hover:border-blue-700 max-w-64 rounded-lg  text-[#fff] hover:text-gray-700">
       <div className="flex items-center justify-center mb-8 relative">
         <div className="absolute top-2 left-0 bg-blue-900 text-[#fff] px-2 rounded-lg text-sm py-1">

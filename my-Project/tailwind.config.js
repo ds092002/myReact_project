@@ -9,7 +9,11 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mulish' : ["Mulish"]
+      }
+    },
   },
   darkMode: "class",
   plugins: [

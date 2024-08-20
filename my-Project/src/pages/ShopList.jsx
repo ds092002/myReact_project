@@ -8,19 +8,19 @@ import { CiGrid2H, CiGrid41 } from "react-icons/ci";
 
 const App = () => {
   return (
-    <div className="m-5 w-full">
+    <div className="">
       <div className="text-3xl font-bold mb-5">Shop</div>
 
-      <div className="flex mx-80 mb-5">
+      <div className="mb-5">
         <MultiCardCarousel />
       </div>
 
       <div className="flex">
-        <div className="w-1/4 p-4 bg-white border-gray-300">
+        <div className="p-4 bg-white border-gray-300">
           <Filter />
         </div>
-        <div className="w-2/4 p-4">
-          <div className='flex p-4  justify-between ml-28 border items-center'>
+        <div className="p-4">
+          <div className='flex justify-between items-center border gap-full'>
             <div className='flex'>
               <a href="" className='text-3xl'><CiGrid2H /></a>
               <a href="" className='text-3xl'><CiGrid41 /></a>

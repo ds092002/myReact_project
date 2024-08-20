@@ -89,15 +89,15 @@ const MultiCardCarousel = () => {
     <div className="mt-2">
       <div className="">
         <div className="relative" onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
-          <div className="flex justify-center items-center space-x-4 relative">
+          <div className="flex mx-60 items-center space-x-9 relative">
             {getVisibleCards().map((card, index) => (
               <a href="">
               <div
-                className="flex flex-col justify-center items-center w-60 h-32 rounded-lg shadow-md hover:border-1 hover:border-[#0065C8] transition duration-100"
+                className="flex flex-col justify-center items-center w-64 h-36 rounded-lg shadow-md hover:border-1 hover:border-[#0065C8] transition duration-100"
                 key={index}
                 style={{ backgroundColor: card.backgroundColor }}
               >
-                <img className="w-16 h-14 object-fit rounded-lg" src={card.image} alt="Card" />
+                <img className="w-20 h-16 object-fit rounded-lg" src={card.image} alt="Card" />
                 <h3 className="text-sm  text-gray-950 font-semibold">{card.title}</h3>
               </div>
               </a>

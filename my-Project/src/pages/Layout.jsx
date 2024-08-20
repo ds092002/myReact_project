@@ -14,17 +14,17 @@ import ProductGrid from './ProductGrid'
 const Layout = () => {
   return (
     <div>
-        {/* <Home/> */}
-        {/* <Error404page/> */}
-        {/* <RegisterPage/> */}
-        {/* <OrderTrack/> */}
-        {/* <Contact/> */}
+        <Home/>
+        <RegisterPage/>
+        <OrderTrack/>
+        <Contact/>
         <ShopList/>
-        {/* <BlogPage/> */}
-        {/* <WhishList/> */}
-        {/* <Cart/> */}
-        {/* <About/> */}
+        <BlogPage/>
+        <WhishList/>
+        <Cart/>
+        <About/>
         <ProductGrid/>
+        <Error404page/>
     </div>
   )
 }
