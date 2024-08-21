@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "flowbite-react";
+import Company from "../components/CompanyLogo";
 
 /* Images */
 import image1 from "../assets/asset-21.jpeg";
@@ -67,9 +68,9 @@ const Home = () => {
       <div>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-7">
           <div className="relative w-full">
-            <img src={image1} alt="" className="rounded-xl w-full"/>
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-20">
-              <p className="text-white bg-red-600 lg:text-sm sm:text-[11px] px-2 rounded-tr-md rounded-b-md">
+            <img src={image1} alt="" className="rounded-xl w-96 h-96 lg:w-full lg:h-full"/>
+            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-10 lg:mt-20">
+              <p className="text-[#fff] bg-red-600 lg:text-sm text-[12px] px-2 rounded-tr-md rounded-b-md">
                 WEEKEND DEAL
               </p>
               <h1 className="text-black font-black lg:text-5xl sm:text-[25px] text-center">
@@ -77,34 +78,34 @@ const Home = () => {
                 <br />
                 Games And More
               </h1>
-              <p className="text-black text-md">
+              <p className="text-black text-sm lg:text-base">
                 GREAT SAVINGS & FREE DELIVERY
               </p>
               <a
                 href="#"
-                className="text-gray-50 text-base hover:text-[#0068C8] transition duration-300 mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white"
+                className="text-gray-50 text-sm lg:text-base hover:text-[#0068C8] transition duration-300 mt-1 lg:mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white"
               >
                 SHOP NOW
               </a>
             </div>
           </div>
           <div className="relative w-full">
-            <img src={image2} alt="" className="rounded-xl w-full " />
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-20">
-              <p className="text-white bg-red-600 text-sm px-2 rounded-tr-md rounded-b-md">
+            <img src={image2} alt="" className="rounded-xl w-96 h-96 lg:w-full lg:h-full" />
+            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-10 lg:mt-20">
+              <p className="text-[#fff] bg-red-600 lg:text-sm text-[12px] px-2 rounded-tr-md rounded-b-md">
                 NEW PRODUCTS
               </p>
-              <h1 className="text-black font-black text-5xl text-center">
+              <h1 className="text-black font-black lg:text-5xl sm:text-[25px] text-center">
                 Headphones At
                 <br />
                 Great Low Prices
               </h1>
-              <p className="text-black text-md">
+              <p className="text-black text-sm lg:text-base">
                 GREAT SAVINGS & FREE DELIVERY
               </p>
               <a
                 href=""
-                className="mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white text-gray-50 text-md  hover:text-[#00668C8] transition duration-300"
+                className="text-gray-50 text-sm lg:text-base hover:text-[#0068C8] transition duration-300 mt-1 lg:mt-4 bg-[#0068C8] px-4 py-[10px] font-bold rounded-md hover:bg-white"
               >
                 SHOP NOW
               </a>
@@ -113,45 +114,35 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-5 flex justify-center items-center">
-        <div className="grid gap-2 grid-cols-6 p-4 py-2 border-2 border-gray-300 bg-gray-50 rounded-lg ">
-          {logo.map((logo, index) => (
-            <div
-              key={index}
-              className="flex justify-center items-center p-4 relative border-r border-b border-gray border-collapse mx-34"
-            >
-              <a href="" className="">
-                <img src={logo.src} alt={logo.alt} className="" />
-              </a>
-              <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-50 opacity-70"></div>
-            </div>
-          ))}
-        </div>
+      <Company/>
       </div>
-      <div className="mt-24 mx-56 mb-5">
+
+      {/* Deal Of The Day */}
+      <div className="mt-24 lg:mx-56 mb-5">
         <div>
-          <h2 className="text-black font-semibold">Deals of the day</h2>
-          <hr />
-          <div className="flex space-x-4 mt-8">
+          <h2 className="text-black font-bold ">Deals of the day</h2>
+          <hr className="w-full lg:w-full"/>
+          <div className="lg:flex space-x-4 mt-8">
             <a
               href="#"
-              className="group flex flex-col items-center relative  bg-white border-2 border-blue-400 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              className="flex flex-col h-10 lg:h-full items-center relative  bg-white border-2 border-blue-400 rounded-lg shadow md:flex-row"
             >
-              <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-3%</p>
-              <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+              <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-3%</p>
+              <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
               <img
-                className="object-cover lg:w-[40%] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                className="object-cover w-36 lg:w-[40%] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src={xbox}
                 alt="Xbox"
               />
-              <div className="mb-32 mt-5 pr-5 text-black text-lg flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="mb-32 mt-5 pr-5 text-black text-lg flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><CiHeart /></i></p>
                 <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><CiSearch /></i></p>
                 <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><GoStack /></i></p>
                 <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><BsCart3 /></i></p>
-              </div>
+              </div> */}
               <div className="flex flex-col text-sm justify-between leading-normal text-gray-500">
                 <p className="mt-3 text-sm hover:text-[#0068C8]">Xbox Series</p>
-                <p className=" text-lg text-gray-900 dark:text-white hover:text-[#0068C8]">
+                <p className=" text-lg text-gray-900 dark:text-[#fff] hover:text-[#0068C8]">
                   Xbox Series S-1TB Gaming All-Digital Console,
                   <br />
                   4K Streaming Media
@@ -175,10 +166,10 @@ const Home = () => {
                   ></div>
                 </div>
                 <div className="flex flex-row space-x-5 mt-4 text-xl">
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">1131 <span>Days</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">23 <span>Hours</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">46 <span>Mins</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">08 <span>Secs</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">1131 <span>Days</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">23 <span>Hours</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">46 <span>Mins</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">08 <span>Secs</span></p>
                 </div>
               </div>
             </a>
@@ -187,7 +178,7 @@ const Home = () => {
               href="#"
               className="flex flex-col items-center relative  bg-white border-2 border-blue-400 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
-              <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-26%</p>
+              <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-26%</p>
               <img
                 className="object-cover lg:w-[40%] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src={s23}
@@ -195,7 +186,7 @@ const Home = () => {
               />
               <div className="flex flex-col text-sm justify-between leading-normal text-gray-500 hover:text-[#0068C8]">
                 <p>Samsung Galaxy</p>
-                <h5 className="mb-2 text-lg tracking-tight text-gray-900 dark:text-white hover:text-[#0068C8]">
+                <h5 className="mb-2 text-lg tracking-tight text-gray-900 dark:text-[#fff] hover:text-[#0068C8]">
                   Samsung Galaxy S23 Ultra, Factory Unlocked, 512GB
                 </h5>
                 <div className="flex text-[#FCC904]">
@@ -217,10 +208,10 @@ const Home = () => {
                   ></div>
                 </div>
                 <div className="flex flex-row space-x-5 mt-4 text-xl">
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">1153 <span>Days</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">23 <span>Hours</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">46 <span>Mins</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-white py-2 px-2 rounded-xl">07 <span>Secs</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">1153 <span>Days</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">23 <span>Hours</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">46 <span>Mins</span></p>
+                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">07 <span>Secs</span></p>
                 </div>
               </div>
             </a>
@@ -235,19 +226,20 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Daily Best Sells */}
       <div className="mt-24 mx-56 mb-5">
         <div>
           <h2 className="text-black font-semibold">Daily Best Sells</h2>
           <hr />
         </div>
-        <div className="grid grid-cols-5 gap-4 p-5">
-          <div className="flex flex-col gap-4">
-            <div className="w-[200px]">
-              <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
+        <div className="grid grid-cols-5 gap-2 p-5">
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] border">
+              <div className="hover:border-1 w-[250px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
-                  <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <img src={macBook2} alt="Laptop" className=" rounded-t-md object-cover mx-0" />
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -265,12 +257,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[200px]">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={xbox} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -290,12 +282,12 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="w-[200px]">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={iphone} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -313,12 +305,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[200px]">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={controller} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -338,10 +330,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative border">
             <img src={banner} alt="" className="h-[730px] w-[600px] rounded-lg" />
             <div className="absolute bottom-32 left-10">
-              <p className="text-white bg-red-600 lg:text-sm sm:text-[11px] px-2 w-28 rounded-tr-md rounded-b-md">SAVE EXTRA</p>
+              <p className="text-[#fff] bg-red-600 lg:text-sm sm:text-[11px] px-2 w-28 rounded-tr-md rounded-b-md">SAVE EXTRA</p>
               <h3 className="text-black font-semibold mb-4">15% OFF 
               <br />
                   Order Above
@@ -353,13 +345,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <div className="w-[200px]">
+          <div className="flex flex-col border gap-4">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -377,12 +369,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[200px]">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={xbox} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -401,13 +393,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="w-[200px]">
+          <div className="flex flex-col border gap-4">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={iphone} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -425,12 +417,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[200px]">
+            <div className="w-[200px] border">
               <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={controller} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -479,7 +471,7 @@ const Home = () => {
               <a href="">
                 <img src={iphone2} alt="" className="rounded-xl" />
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center mt-12">
-                  <p className="text-white bg-red-600 text-sm px-2 rounded-tr-md rounded-b-md">
+                  <p className="text-[#fff] bg-red-600 text-sm px-2 rounded-tr-md rounded-b-md">
                     MONTH DEAL
                   </p>
                   <h4 className="text-black font-black text-3xl text-center">
@@ -805,7 +797,7 @@ const Home = () => {
             <p className="text-[#FCC904] px-2 rounded-tr-md rounded-b-md">
               SUPER DEAL ON
             </p>
-            <h1 className="text-white font-black text-5xl">
+            <h1 className="text-[#fff] font-black text-5xl">
               Get $50 - $100 Off
               <br />
               When Buying Online.
@@ -828,8 +820,8 @@ const Home = () => {
               <div className="hover:border-1 w-[250px] h-[290px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -851,8 +843,8 @@ const Home = () => {
               <div className="hover:border-1 w-[250px] h-[290px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -874,8 +866,8 @@ const Home = () => {
               <div className="hover:border-1 w-[250px] h-[290px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -897,8 +889,8 @@ const Home = () => {
               <div className="hover:border-1 w-[250px] h-[290px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -920,8 +912,8 @@ const Home = () => {
               <div className="hover:border-1 w-[250px] h-[290px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-[100%] w-[100%] rounded-t-md object-cover mx-0" />
-                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-white rounded-tr-md rounded-b-md">-15%</p>
-                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>
+                  <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-15%</p>
+                  <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
                 </a>
               </div>
               <div className="p-2">
@@ -947,7 +939,7 @@ const Home = () => {
       <div className="mt-24 mx-56">
         <div className="relative">
           <img src={watch} alt="" className="rounded-lg" />
-          <p className="absolute top-[40%] right-[30%] font-semibold flex justify-center items-center text-2xl text-white">Free Shipping On Order Over $500 - Using code: Freeship</p>
+          <p className="absolute top-[40%] right-[30%] font-semibold flex justify-center items-center text-2xl text-[#fff]">Free Shipping On Order Over $500 - Using code: Freeship</p>
           <p className="absolute border-2 top-3 left-5 w-[93%] h-24 border-dashed border-white rounded-lg"></p>
         </div>
       </div>

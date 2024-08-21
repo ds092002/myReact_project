@@ -521,12 +521,12 @@ const Navbar = () => {
             <div>
               <div className="flex items-center space-x-9">
                 <a href="d-flex align-items-center">
-                  <i className=" text-4xl relative text-black">
+                  <div className=" text-4xl relative text-black">
                     <CiHeart />
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                       0
                     </span>
-                  </i>
+                  </div>
                 </a>
                 <a href="#" className="flex items-center space-x-1 d-flex align-items-center">
                   <i className="text-3xl text-black">
@@ -540,13 +540,13 @@ const Navbar = () => {
                   </div>
 
                 </a>
-                <a href="#" class="flex items-center space-x-1 d-flex align-items-center">
-                  <i className="text-3xl relative text-black">
+                <a href="#" class="flex items-center space-x-2 d-flex align-items-center">
+                  <div className="text-3xl relative text-black">
                     <BsCart3 />
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
-                      0
+                    0
                     </span>
-                  </i>
+                  </div>
                   <div className="flex flex-col ml-2">
                     <span className="text-[#000] text-[12px]">My Cart</span>
                     <span className="text-sm font-bold text-black">$0.00</span>

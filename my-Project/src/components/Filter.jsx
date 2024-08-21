@@ -2,7 +2,7 @@ import React from 'react';
 
 const Filter = () => {
   return (
-    <div className='font-mulish'>
+    <div className=''>
     <div className="ml-56 border-r  border-gray-300">
       <h6 className="font-bold mb-2 text-[#000] ">Price</h6>
       <div className="flex flex-col mb-4">

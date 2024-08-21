@@ -16,11 +16,11 @@ const App = () => {
       </div>
 
       <div className="flex">
-        <div className="p-4 bg-white border-gray-300">
+        <div className="w-1/4 bg-white border-gray-300">
           <Filter />
         </div>
-        <div className="p-4">
-          <div className='flex justify-between items-center border gap-full'>
+        <div className="w-2/4">
+          <div className='flex justify-between items-center p-4'>
             <div className='flex'>
               <a href="" className='text-3xl'><CiGrid2H /></a>
               <a href="" className='text-3xl'><CiGrid41 /></a>
