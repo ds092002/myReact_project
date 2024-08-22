@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "flowbite-react";
 import Company from "../components/CompanyLogo";
+import DealOfTheDay from "../components/DealOfTheDay";
 
 /* Images */
 import image1 from "../assets/asset-21.jpeg";
@@ -122,101 +123,8 @@ const Home = () => {
         <div>
           <h2 className="text-black font-bold ">Deals of the day</h2>
           <hr className="w-full lg:w-full"/>
-          <div className="lg:flex space-x-4 mt-8">
-            <a
-              href="#"
-              className="flex flex-col h-10 lg:h-full items-center relative  bg-white border-2 border-blue-400 rounded-lg shadow md:flex-row"
-            >
-              <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-3%</p>
-              <p className="absolute top-8 left-2 text-[11px] px-2 bg-red-500 text-[#fff] rounded-tr-md rounded-b-md">HOT</p>
-              <img
-                className="object-cover w-36 lg:w-[40%] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                src={xbox}
-                alt="Xbox"
-              />
-              {/* <div className="mb-32 mt-5 pr-5 text-black text-lg flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><CiHeart /></i></p>
-                <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><CiSearch /></i></p>
-                <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><GoStack /></i></p>
-                <p className="rounded-full border h-7 w-7 flex justify-center items-center border-gray-500"><i className=""><BsCart3 /></i></p>
-              </div> */}
-              <div className="flex flex-col text-sm justify-between leading-normal text-gray-500">
-                <p className="mt-3 text-sm hover:text-[#0068C8]">Xbox Series</p>
-                <p className=" text-lg text-gray-900 dark:text-[#fff] hover:text-[#0068C8]">
-                  Xbox Series S-1TB Gaming All-Digital Console,
-                  <br />
-                  4K Streaming Media
-                </p>
-                <div className="flex text-[#FCC904]">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} />
-                  ))}
-                </div>
-                <p className="text-red-500 text-xl font-semibold ">
-                  $279.99<del className="text-gray-500 text-lg  px-2 font-normal">$289.99</del>
-                </p>
-                <p>Sold: 1/35</p>
-                <div className="progress h-[50px] rounded">
-                  <div
-                    className="progress-bar w-[95%]"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div className="flex flex-row space-x-5 mt-4 text-xl">
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">1131 <span>Days</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">23 <span>Hours</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">46 <span>Mins</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">08 <span>Secs</span></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              className="flex flex-col items-center relative  bg-white border-2 border-blue-400 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-            >
-              <p className="absolute top-2 left-2 text-[11px] px-2 bg-[#0068C8] text-[#fff] rounded-tr-md rounded-b-md">-26%</p>
-              <img
-                className="object-cover lg:w-[40%] md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                src={s23}
-                alt="Samsung Galaxy"
-              />
-              <div className="flex flex-col text-sm justify-between leading-normal text-gray-500 hover:text-[#0068C8]">
-                <p>Samsung Galaxy</p>
-                <h5 className="mb-2 text-lg tracking-tight text-gray-900 dark:text-[#fff] hover:text-[#0068C8]">
-                  Samsung Galaxy S23 Ultra, Factory Unlocked, 512GB
-                </h5>
-                <div className="flex text-[#FCC904]">
-                  {[...Array(4)].map((_, i) => (
-                    <FaStar key={i} />
-                  ))}
-                </div>
-                <p className="text-red-500 text-xl font-semibold ">
-                  $699.99<del className="text-gray-500 text-lg  px-2 font-normal">$949.99</del>
-                </p>
-                <p>Sold: 68/167</p>
-                <div className="progress h-[50px] rounded">
-                  <div
-                    className="progress-bar w-[60%]"
-                    role="progressbar"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div className="flex flex-row space-x-5 mt-4 text-xl">
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">1153 <span>Days</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">23 <span>Hours</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">46 <span>Mins</span></p>
-                  <p className="flex flex-col border justify-center items-center bg-[#0068C8] text-[#fff] py-2 px-2 rounded-xl">07 <span>Secs</span></p>
-                </div>
-              </div>
-            </a>
-          </div>
           <div className="flex justify-center mt-4">
+            <DealOfTheDay/>
             <div className="flex space-x-2">
               <span className="bg-gray-500 h-2 w-2 rounded-full"></span>
               <span className="bg-gray-300 h-2 w-2 rounded-full"></span>
