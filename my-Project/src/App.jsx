@@ -8,10 +8,10 @@ import Footer2 from './components/Footer2'
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Layout/>
       {/* <Footer/> */}
-      <Footer2/>
+      {/* <Footer2/> */}
     </>
   )
 }
