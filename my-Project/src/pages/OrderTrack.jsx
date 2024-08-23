@@ -4,7 +4,7 @@ const OrderTrack = () => {
   return (
     <div>
       <div className='mt-24'>
-        <h1 className='text-2xl lg:text-3xl text-black font-bold lg:ml-96 sm:text-left max-w-4xl px-6'>
+        <h1 className='text-2xl lg:text-3xl text-black font-bold lg:ml-72 sm:text-left max-w-4xl px-6'>
           Track Order
         </h1>
       </div>
