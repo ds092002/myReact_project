@@ -79,8 +79,8 @@ const DealOfTheDay = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden mx-40">
+    <div className="relative container">
+      <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * (100 / totalSlides)}%)` }}
@@ -88,11 +88,11 @@ const DealOfTheDay = () => {
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`flex-shrink-0 w-full h-full px-4 md:w-1/2 ${index % itemsPerPage === 0 ? "md:pr-2" : "md:pl-2"}`}
+              className={`flex-shrink-0 w-full h-full px-2 md:w-[calc(50%-8px)] ${index % itemsPerPage === 0 ? "md:pr-1" : "md:pl-1"}`}
             >
               <a
                 href="#"
-                className="flex flex-col items-cente border-2 h-full border-blue-400 rounded-lg shadow-lg md:flex-row relative"
+                className="flex flex-col items-center border-2 h-full border-blue-400 rounded-lg shadow-lg md:flex-row relative"
               >
                 <p className="absolute top-2 left-2 text-xs px-2 bg-blue-600 text-white rounded-tr-md rounded-b-md">-3%</p>
                 <p className="absolute top-8 left-2 text-xs px-2 bg-red-500 text-white rounded-tr-md rounded-b-md">HOT</p>

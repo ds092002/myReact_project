@@ -29,7 +29,7 @@ const ProductGrid = () => {
         { image: image4 },
     ]
     return (
-        <div className="mx-52 px-4 md:px-8 2xl:px-16">
+        <div className="lg:mx-52 lg:px-4 px-2 md:px-8 2xl:px-16">
             <div className="block grid-cols-9 items-start gap-x-10 pb-10 pt-7 lg:grid lg:pb-14 xl:gap-x-14 2xl:pb-20">
                 <div className="col-span-5 grid grid-cols-1 gap-2.5">
                     {image.map((image, index) => (
@@ -42,13 +42,13 @@ const ProductGrid = () => {
                         </div>
                     ))}
                 </div>
-                <div className="col-span-4 pt-8 lg:pt-0">
+                <div className="col-span-4 pt-8 lg:pt-0 sticky top-6">
                     <div className=" border-gray-300  border-b">
                         <p>Laptops</p>
-                        <h2 className="text-heading mb-3.5 text-lg font-bold md:text-xl lg:text-2xl 2xl:text-3xl">
+                        <h2 className="text-heading mb-3.5 text-2xl font-semibold md:text-xl lg:text-2xl 2xl:text-3xl">
                             MacBook Pro 13.3" 16GB/512GB Silver
                         </h2>
-                        <p className="text-body text-sm leading-6  lg:text-base lg:leading-8 flex items-center space-x-2">
+                        <p className="text-body text-lg leading-6  lg:text-base lg:leading-8 flex flex-wrap items-center lg:space-x-2 space-x-1">
                             <div className="flex text-[#FCC904]">
                                 {[...Array(5)].map((_, i) => (
                                     <FaStar key={i} />
@@ -56,16 +56,16 @@ const ProductGrid = () => {
                             </div>
                             <span className="text-[#000]">(4.50)</span>
                             <span className="text-[#000]">2 Reviews</span>
-                            <span className='text-sm border-1  px-2 rounded border-[#0FB232] text-[#0FB232]'>IN STOCK</span>
+                            <span className='text-sm border-1 px-2 rounded border-[#0FB232] text-[#0FB232] mt-2 lg:mt-0'>IN STOCK</span>
                         </p>
-                        <div className="mt-5 flex items-center ">
-                            <div className="text-heading text-red-500 pr-2 text-base font-bold md:pr-0 md:text-xl lg:pr-2 lg:text-2xl 2xl:pr-0 2xl:text-4xl">
+                        <div className="lg:mt-5 flex flex-wrap items-center ">
+                            <div className="text-heading text-red-500 pr-2 text-2xl font-bold md:pr-0 md:text-xl lg:pr-2 lg:text-2xl 2xl:pr-0 2xl:text-4xl">
                                 $1,527.00
                             </div>
-                            <del className="font-segoe pl-2 text-sm text-gray-400 md:text-base lg:text-lg xl:text-xl">
+                            <del className="font-segoe pl-2 text-xl text-gray-400 md:text-base lg:text-lg xl:text-xl">
                                 $1,795.00
                             </del>
-                            <span className='text-xl ml-3 text-[#000]'>(-15%)</span>
+                            <span className='text-xl lg:ml-3 text-[#000]'>(-15%)</span>
                         </div>
                         <ul className='flex flex-col mt-4 text-[#848484]'>
                             <li className='list-disc decoration-[#000]'>RAM: 16GB</li>
@@ -82,21 +82,21 @@ const ProductGrid = () => {
                         <div className="space-s-4 3xl:pr-48 flex items-center gap-2 border-gray-300  py-8  md:pr-32 lg:pr-12 2xl:pr-32">
                             <div className="group flex h-11 flex-shrink-0 items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-[#EDEDED] md:h-12">
                                 <button
-                                    className="text-heading hover:bg-heading flex h-full w-10 flex-shrink-0 items-center justify-center border-e border-gray-300 transition duration-300 ease-in-out focus:outline-none md:w-12"
+                                    className="text-heading hover:bg-heading flex lg:h-full lg:w-10 w-7 flex-shrink-0 items-center justify-center transition duration-300 ease-in-out focus:outline-none md:w-12"
                                     disabled
                                 >
-                                    +
+                                    -
                                 </button>
                                 <span className="duration-250 text-heading flex h-full w-12  flex-shrink-0 cursor-default items-center justify-center text-base font-semibold transition-colors ease-in-out  md:w-20 xl:w-24">
                                     1
                                 </span>
-                                <button className="text-heading hover:bg-heading flex h-full w-10 flex-shrink-0 items-center justify-center border-s border-gray-300 transition duration-300 ease-in-out focus:outline-none md:w-12">
-                                    -
+                                <button className="text-heading hover:bg-heading flex lg:h-full lg:w-10 w-7 flex-shrink-0 items-center justify-center transition duration-300 ease-in-out focus:outline-none md:w-12">
+                                    +
                                 </button>
                             </div>
                             <button
                                 type="button"
-                                className="h-11 w-full rounded-md bg-[#0068C8] px-7 py-2.5 text-sm font-semibold text-[#fff] shadow-sm hover:bg-[#fff] hover:border-1 hover:border-[#0068C8] hover:text-[#000] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                                className="h-11 w-full rounded-md bg-[#0068C8] px-7 py-2.5 lg:text-sm font-bold text-[#fff] shadow-sm hover:bg-[#fff] hover:border-1 hover:border-[#0068C8] hover:text-[#000] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                             >
                                 Add to cart
                             </button>
@@ -107,33 +107,35 @@ const ProductGrid = () => {
                         </div>
                     </div>
                     <div className="py-6 ">
-                        <p className='text-[#000]'>SKU: <span className='text-[#848484]'>MPXQ2LLA</span></p>
-                        <p className='text-[#000]'>Tags: <span className='text-[#848484]'>Electronics, Laptop</span></p>
-                        <p className='flex text-[#000]'>Share: <span className='flex items-center text-[#848484] text-2xl space-x-3'><FiFacebook /><FiTwitter /><ImPinterest2 /><CiLinkedin /></span></p>
+                        <p className='text-[#000]'>SKU: <span className='text-[#848484] ml-4 lg:ml-0'>MPXQ2LLA</span></p>
+                        <p className='text-[#000]'>Tags: <span className='text-[#848484] ml-4 lg:ml-0'>Electronics, Laptop</span></p>
+                        <p className='flex text-[#000]'>Share: <span className='flex items-center text-[#848484] lg:text-2xl text-xl space-x-3 ml-4 lg:ml-0'><FiFacebook /><FiTwitter /><ImPinterest2 /><CiLinkedin /></span></p>
                     </div>
                 </div>
             </div>
 
             <div className=" mx-auto my-10">
+                <h1 className='text-[#000] font-semibold sm:text-2xl lg:text-3xl'>Frequently Bought Together</h1>
+                <hr />
                 <div className="grid grid-cols-12 gap-4 items-center">
                     {/* Product 1 */}
-                    <div className="col-span-2 text-center border w-72">
+                    <div className="col-span-2 text-center lg:w-72">
                         <img
                             src={image1}
                             alt="Product 1"
-                            className="mx-auto "
+                            className="mx-auto"
                         />
                         <p className="mt-4 text-sm">This Product: MacBook Pro 13.3" 16GB/512GB Silver</p>
                         <p className="text-red-600 text-lg font-semibold">$1,527.00 <span className="line-through  text-base text-gray-500">$1,795.00</span></p>
                     </div>
 
                     {/* Plus Sign */}
-                    <div className="col-span-1 flex justify-center items-center rounded h-4 w-4 text-2xl font-semibold">
+                    <div className="col-span-1 text-center text-2xl font-semibold">
                         +
                     </div>
 
                     {/* Product 2 */}
-                    <div className="col-span-2 text-center w-72">
+                    <div className="col-span-2 text-center lg:w-72">
                         <img
                             src={mousemat}
                             alt="Product 2"
@@ -149,7 +151,7 @@ const ProductGrid = () => {
                     </div>
 
                     {/* Product 3 */}
-                    <div className="col-span-2 text-center w-72">
+                    <div className="col-span-2 text-center lg:w-72">
                         <img
                             src={mouseGaming}
                             alt="Product 3"
@@ -168,19 +170,19 @@ const ProductGrid = () => {
                     </div>
                 </div>
             </div>
-            
-            <div className="mx-auto my-10 p-6 bg-white rounded border-1">
+
+            <div className="lg:mx-auto my-10 p-2 lg:p-6 bg-white rounded-2xl border font-bold">
                 {/* Tabs Section */}
-                <div className=" mb-6">
-                    <div className="flex items-center justify-center space-x-16 text-lg font-semibold mt-6 ">
-                        <a className="pb-2 text-3xl bg-[#0068C8] border text-[#fff] px-9 py-3 rounded-full text-center">Product details</a>
-                        <a className="pb-2 text-3xl text-[#000] hover:bg-[#0068C8] border hover:text-[#fff] px-9 py-3 rounded-full text-center">Specifications</a>
-                        <a className="pb-2 text-3xl text-[#000] hover:bg-[#0068C8] border hover:text-[#fff] px-9 py-3 rounded-full text-center">Reviews (2)</a>
+                <div className="mb-6">
+                    <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-lg font-semibold mt-6">
+                        <a className="text-sm md:text-xl lg:text-3xl bg-[#0068C8] text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full text-center">Product details</a>
+                        <a className="text-sm md:text-xl lg:text-3xl text-[#000] hover:bg-[#0068C8] hover:text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full text-center">Specifications</a>
+                        <a className="text-sm md:text-xl lg:text-3xl text-[#000] hover:bg-[#0068C8] hover:text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full text-center">Reviews (2)</a>
                     </div>
                 </div>
 
                 {/* Product Description */}
-                <p className="text-gray-700 mb-8">
+                <p className="text-gray-700 mb-8 text-base sm:text-lg">
                     This Apple MacBook Pro (MPXQ2LL/A) has a high-resolution LED-backlit 13.3-inch widescreen Retina display (2560 x 1600 native resolution). Powered by Intel Core i5 (2.3GHz) and Intel Iris Plus Graphics 640. Solid State Drive capacity of 256GB with 8GB of RAM. Supports Mac OS. Bundle includes Black Case, Wireless Mouse, and Bluetooth Headset! This device has been tested to be in great working condition. It will show signs of use and cosmetic blemishes which may include some scratch/dings, all of which do not affect the usability of this device. (Refurbished)
                 </p>
 
@@ -188,9 +190,9 @@ const ProductGrid = () => {
                 <div className="space-y-8">
                     {/* Dimensions & Weight */}
                     <div className="flex flex-col md:flex-row md:space-x-8">
-                        <div className="flex-1">
-                            <h2 className="text-3xl text-[#000] font-semibold mb-4">Dimensions & Weight</h2>
-                            <ul className="text-gray-700 mb-6 space-y-2">
+                        <div className="flex-1 mb-6 md:mb-0">
+                            <h2 className="text-2xl md:text-2xl lg:text-3xl text-[#000] font-bold mb-4">Dimensions & Weight</h2>
+                            <ul className="text-gray-700 space-y-2 text-base sm:text-base">
                                 <li>1. Width: 356.7 mm (14.05 in)</li>
                                 <li>2. Height: 15.67 mm (0.62 in – 0.72 in.)</li>
                                 <li>3. Depth: 251.90 mm (9.92 in)</li>
@@ -201,26 +203,26 @@ const ProductGrid = () => {
                             <img
                                 src={product1}
                                 alt="Laptop dimensions"
-                                className="w-full"
+                                className="w-full h-auto object-cover"
                             />
                         </div>
                     </div>
 
                     {/* Better Performance */}
-                    <div className="flex flex-col md:flex-row md:space-x-8">
-                        <div className="flex-1">
+                    <div className="flex flex-col-reverse md:flex-row md:space-x-8">
+                        <div className="flex-1 lg:order-1 mb-6 md:mb-0">
                             <img
                                 src={product2}
                                 alt="Laptop performance"
-                                className="w-full"
+                                className="w-full h-auto object-cover"
                             />
                         </div>
-                        <div className="flex-1">
-                            <h2 className="text-3xl text-[#000] font-semibold mb-4">Better performance. More productivity.</h2>
-                            <p className="text-gray-700 mb-6">
+                        <div className="flex-1 lg:order-2">
+                            <h2 className="text-2xl md:text-2xl lg:text-3xl text-[#000] font-bold mb-4">Better performance. More productivity.</h2>
+                            <p className="text-gray-700 mb-6 text-base sm:text-base">
                                 Thanks to 13th Gen Intel® Core™ processors, this laptop runs at peak performance to get you through the day. Doing some graphics-heavy work? Optional NVIDIA® RTX 2050 Graphics (coming soon) give you the boost you need.
                             </p>
-                            <p className="text-gray-700 mb-6">
+                            <p className="text-gray-700 mb-6 text-base sm:text-base">
                                 Enjoy a fast, smooth PC performance without sacrificing power thanks to LPDDR5 memory. And with dual heat pipes, your device stays nice, cool and performing at its best. Meanwhile, adaptive thermals optimize power according to your device’s location, whether it’s on a stable surface like a desk or an unstable surface like your lap. Using advanced algorithms and accelerometers, your device intelligently adapts its power and thermal profiles to the situation to keep your device running smoothly.
                             </p>
                         </div>
@@ -228,12 +230,12 @@ const ProductGrid = () => {
 
                     {/* Stay Secure */}
                     <div className="flex flex-col md:flex-row md:space-x-8">
-                        <div className="flex-1">
-                            <h2 className="text-3xl text-[#000] font-semibold mb-4">Stay secure.</h2>
-                            <p className="text-gray-700 mb-6">
+                        <div className="flex-1 mb-6 md:mb-0">
+                            <h2 className="text-3xl md:text-xl lg:text-3xl text-[#000] font-bold mb-4">Stay secure.</h2>
+                            <p className="text-gray-700 mb-6 text-base sm:text-base">
                                 The Trusted Platform Module 2.0 is a commercial-grade security chip installed on the motherboard that creates and stores passwords and encryption keys. It verifies that the computer has not been tampered with before booting up and protects your data against external software attacks.
                             </p>
-                            <p className="text-gray-700 mb-6">
+                            <p className="text-gray-700 mb-6 text-base sm:text-base">
                                 Get added peace-of-mind with the fingerprint reader that allows you to securely log in with a touch, while a mechanical shutter on the camera protects your privacy and prevents accidental embarrassments.
                             </p>
                         </div>
@@ -241,20 +243,38 @@ const ProductGrid = () => {
                             <img
                                 src={product3}
                                 alt="Laptop security"
-                                className="w-full"
+                                className="w-full h-auto object-cover"
                             />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-5'>
-                <ProductGridCard/>
-                <ProductGridCard/>
-                <ProductGridCard/>
-                <ProductGridCard/>
-                <ProductGridCard/>
-            </div>                    
+            <div>
+                <h1 className='lg:text-3xl font-bold text-[#000]'>You may also like...</h1>
+                <hr />
+                <div className='grid grid-cols-2 lg:grid-cols-5'>
+                    <ProductGridCard />
+                    <ProductGridCard />
+                    <ProductGridCard />
+                    <ProductGridCard />
+                    <ProductGridCard />
+                </div>
+            </div>
+
+
+            <div>
+                <h1 className='lg:text-3xl font-bold text-[#000]'>Related products</h1>
+                <hr />
+                <div className='grid grid-cols-2 lg:grid-cols-5'>
+                    <ProductGridCard />
+                    <ProductGridCard />
+                    <ProductGridCard />
+                    <ProductGridCard />
+                    <ProductGridCard />
+                </div>
+            </div>
+
         </div>
     )
 }

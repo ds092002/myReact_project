@@ -2,12 +2,6 @@ import React from 'react'
 
 import s23 from '../assets/S23-400x400.jpg'
 
-import { FaFacebook } from "react-icons/fa";
-import { AiFillTwitterCircle } from "react-icons/ai";
-import { FaPinterest } from "react-icons/fa";
-import { BiSolidEnvelope } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa";
-
 const Cartcard = () => {
     return (
         <div className=''>

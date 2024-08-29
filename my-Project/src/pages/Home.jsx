@@ -125,11 +125,6 @@ const Home = () => {
           <hr className="w-full lg:w-full"/>
           <div className="flex justify-center mt-4">
             <DealOfTheDay/>
-            <div className="flex space-x-2">
-              <span className="bg-gray-500 h-2 w-2 rounded-full"></span>
-              <span className="bg-gray-300 h-2 w-2 rounded-full"></span>
-              <span className="bg-gray-300 h-2 w-2 rounded-full"></span>
-            </div>
           </div>
         </div>
       </div>
