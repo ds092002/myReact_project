@@ -44,7 +44,7 @@ const About = () => {
 
         {/* Banner Section */}
         <div className="px-2 py-14 lg:px-10  lg:mx-52">
-          <div  className="px-3 py-32 lg:px-32 rounded-lg  text-white bg-center bg-fixed relative before:content before:h-full before:w-full before:absolute before:top-0 before:left-0 before:bg-black before:opacity-80 before:rounded-lg" style={{ backgroundImage: `url(${about1})`, height: '600px', backgroundRepeat: 'no-repeat'}}>
+          <div  className="px-3 py-32 lg:px-32 rounded-lg  text-white bg-center bg-fixed relative before:content before:h-full before:w-full before:absolute before:top-0 before:left-0 before:bg-black before:opacity-80 before:rounded-lg" style={{ backgroundImage: `url(${about1})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div className="text-center relative z-10">
               <p className="uppercase lg:text-lg text-sm font-medium mb-3 tracking-wider">Start from since 1990</p>
               <p className="text-2xl lg:text-[52px] font-extrabold leading-tight tracking-wide">We Help Everyone <br /> Enjoy Amazing Products</p>

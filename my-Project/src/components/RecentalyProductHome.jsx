@@ -5,7 +5,7 @@ import macBook2 from '../assets/macbook2.jpg'
 const RecentalyProductHome = () => {
   return (
     <div>
-        <div className="border">
+        <div className="">
               <div className="lg:hover:border-1 lg:w-[250px] lg:h-[280px] lg:hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                 <a href="" className="relative">
                   <img src={macBook2} alt="Laptop" className="h-full w-full rounded-t-md object-contain mx-0" />

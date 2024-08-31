@@ -68,7 +68,7 @@ const Home = () => {
 
   return (
     <div className="mt-10">
-      {/* <div>
+      <div className="border mx-2  ">
         <div className="flex flex-col sm:flex-row justify-center items-center gap-7">
           <div className="relative w-full">
             <img src={image1} alt="" className="rounded-xl w-96 h-96 object-cover lg:w-full lg:h-full"/>
@@ -115,7 +115,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
 
       {/* <div className="mt-5 flex justify-center items-center mx-2">
@@ -352,8 +352,8 @@ const Home = () => {
       </div> */}
 
 
-      <div className="lg:mt-24 mt-20 lg:mb-5 mx-2">
-        <div>
+      {/* <div className="lg:mt-24 mt-20 lg:mb-5 mx-2">
+        <div className="">
           <div className="lg:flex grid grid-cols-1 justify-center items-center lg:gap-7 sm:gap-2">
             <div className="relative">
               <img src={logitech} alt="" className="rounded-xl lg:w-full object-cover h-[400px] lg:h-full" />
@@ -391,10 +391,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="mt-24 lg:mx-56 lg:px-0 px-2">
+      {/* <div className="mt-24 lg:mx-56 lg:px-0 px-2">
         <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-32">
           <div>
             <p className="lg:text-3xl text-2xl font-bold text-black">Trending Products</p>
@@ -418,12 +418,12 @@ const Home = () => {
              <HomeHrProduct/>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="lg:mt-24 mt-16">
+      <div className="lg:mt-24 mt-16 border">
         <div className="relative">
           <img src={camera} alt="" className="object-cover lg:h-full h-72 w-72 lg:w-full" />
-          <div className="absolute top-0  lg:left-52 w-full h-full flex flex-col justify-center items-center lg:justify-start lg:items-start lg:mt-32">
+          <div className="absolute top-0 px-64 w-full h-full flex flex-col justify-center items-center lg:justify-start lg:items-start lg:mt-32">
             <p className="text-[#FCC904] px-2 rounded-tr-md rounded-b-md">
               SUPER DEAL ON
             </p>
@@ -443,7 +443,7 @@ const Home = () => {
       </div>
 
 
-      <div className="mt-24 lg:mx-56">
+      {/* <div className="mt-24 lg:mx-56">
         <div>
           <h3 className="text-black font-semibold">Recently Viewed Products</h3>
           <hr />
@@ -455,7 +455,7 @@ const Home = () => {
               <RecentalyProductHome/>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       {/* <div className="mt-24 lg:mx-56">
