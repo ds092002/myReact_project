@@ -68,7 +68,7 @@ const Home = () => {
 
   return (
     <div className="mt-10">
-      <div className="border mx-2  ">
+      <div className="mx-2">
         <div className="flex flex-col sm:flex-row justify-center items-center gap-7">
           <div className="relative w-full">
             <img src={image1} alt="" className="rounded-xl w-96 h-96 object-cover lg:w-full lg:h-full"/>
@@ -116,7 +116,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
 
       {/* <div className="mt-5 flex justify-center items-center mx-2">
       <Company/>
@@ -420,7 +419,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="lg:mt-24 mt-16 border">
+      {/* <div className="lg:mt-24 mt-16 border">
         <div className="relative">
           <img src={camera} alt="" className="object-cover lg:h-full h-72 w-72 lg:w-full" />
           <div className="absolute top-0 px-64 w-full h-full flex flex-col justify-center items-center lg:justify-start lg:items-start lg:mt-32">
@@ -440,7 +439,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       {/* <div className="mt-24 lg:mx-56">

@@ -14,6 +14,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -104,7 +105,7 @@ const Navbar = () => {
             <div className="flex justify-around mt-10">
               <div className="space-y-2 mt-5">
                 <a href="" className="text-[#000] block hover:text-[#0068C8]">Smartphone
-                  {/* <div>
+                  <div>
                     <ul className="flex justify-center mt-10">
                       <div className="absolute  bg-[#fff] mr-96 text-[#000] h-[550px] w-full container">
                         <div className="flex justify-around mt-10">
@@ -149,10 +150,10 @@ const Navbar = () => {
                         </div>
                       </div>
                     </ul>
-                  </div> */}
+                  </div>
                 </a> <hr />
                 <a href="" className="text-[#000] block hover:text-[#0068C8]">Laptops
-                  {/* <div>
+                  <div>
                     <ul className="flex justify-center mt-10">
                       <div className="absolute  bg-[#fff] mr-96 text-[#000] h-[550px] w-full container">
                         <div className="flex justify-around mt-10">
@@ -175,7 +176,7 @@ const Navbar = () => {
                         </div>
                       </div>
                     </ul>
-                  </div> */}
+                  </div>
                 </a> <hr />
                 <a href="" className="text-[#000] block hover:text-[#0068C8]">Camera</a> <hr />
                 <a href="" className="text-[#000] block hover:text-[#0068C8]">Headphone</a> <hr />
@@ -202,48 +203,48 @@ const Navbar = () => {
 
               <div className="space-y-2 mt-5">
                 <h1 className="text-xl font-semibold">Home Page</h1>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Home 01</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Home 02</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Home 03</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Home 04</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Home 05</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Home 06</a>
+                <Link to="/" className="text-[#000] block hover:text-[#0068C8]">Home 01</Link>
+                <Link to="/" className="text-[#000] block hover:text-[#0068C8]">Home 02</Link>
+                <Link to="/" className="text-[#000] block hover:text-[#0068C8]">Home 03</Link>
+                <Link to="/" className="text-[#000] block hover:text-[#0068C8]">Home 04</Link>
+                <Link to="/" className="text-[#000] block hover:text-[#0068C8]">Home 05</Link>
+                <Link to="/" className="text-[#000] block hover:text-[#0068C8]">Home 06</Link>
               </div>
 
               <div className="space-y-2 mt-5">
                 <h1 className="text-xl font-semibold">Shop Layouts</h1>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Top Categories</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Top Brands</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop List</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Scroll Sidebar</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Top Filter</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Load More Button</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Infinity Scroll</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Shop Ajax Pagination</a>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Top Categories</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Top Brands</Link>
+                <Link to="/ShopList" className="text-[#000] font-bold block hover:text-[#0068C8]">Shop List</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Scroll Sidebar</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Top Filter</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Load More Button</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Infinity Scroll</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Shop Ajax Pagination</Link>
               </div>
 
               <div className="space-y-2 mt-5">
                 <h1 className="text-xl font-semibold">Product Layouts</h1>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Horizontal Thumbnails</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Vertical Thumbnails</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Grid Thumbnails</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Variation Thumbnails</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Variation Dropdown</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Product Deal</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Group Products</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Product Video</a>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Horizontal Thumbnails</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Vertical Thumbnails</Link>
+                <Link to="/ProductGrid" className="text-[#000] block hover:text-[#0068C8] font-bold">Grid Thumbnails</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Variation Thumbnails</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Variation Dropdown</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Product Deal</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Group Products</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Product Video</Link>
               </div>
 
               <div className="space-y-2 mt-5">
                 <h1 className="text-xl font-semibold">Others</h1>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">About Us</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Contact Us</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Blog</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Blog Deatil</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Track Order</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Flash Sale</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">Coming Soon</a>
-                <a href="" className="text-[#000] block hover:text-[#0068C8]">404</a>
+                <Link to="/about" className="text-[#000] block hover:text-[#0068C8] font-bold">About Us</Link>
+                <Link to="/contact" className="text-[#000] block hover:text-[#0068C8] font-bold">Contact Us</Link>
+                <Link to="/blogpage" className="text-[#000] block hover:text-[#0068C8] font-bold">Blog</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Blog Deatil</Link>
+                <Link to="/ordertrack" className="text-[#000] block hover:text-[#0068C8] font-bold">Track Order</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Flash Sale</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8]">Coming Soon</Link>
+                <Link to="*" className="text-[#000] block hover:text-[#0068C8] font-bold">404</Link>
               </div>
 
             </div>
@@ -441,12 +442,14 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-black w-full py-1 text-sm font-semibold">
-        <nav className="flex justify-between">
-          <ul className="flex items-center space-x-6 ml-52">
+      <div className="bg-black w-full text-sm font-semibold">
+        <nav className="flex justify-around">
+          <ul className="flex items-center space-x-6">
             <li><a href="" className="text-white">English</a></li>
             <li><a href="" className="text-white">USD</a></li>
+            <div>
             <li><a href="" className="text-white">Free Shipping On All Orders Over $100</a></li>
+            </div>
           </ul>
           <ul className="flex items-center justify-between space-x-5 mr-52">
             <li className="text-[#FCC904] space-x-2"><i class="fa-solid fa-bolt-lightning"></i><a href="" className="text-[#FCC904]">Flash Sale</a></li>
@@ -468,42 +471,42 @@ const Navbar = () => {
                 <select
                   name=""
                   id=""
-                  className="focus h-full px-7  bg-gray-100 text-gray-700 border-0 border-[#0068C8]"
+                  className="focus:ring-0 h-full px-7  bg-gray-100 text-gray-700 border-0 border-[#0068C8]"
                 >
                   <option className="">All Categories</option>
-                  <option>Camera</option>
+                  <optgroup label="Camera"></optgroup>
                   <option>&nbsp;&nbsp;Accessories</option>
                   <option>&nbsp;&nbsp;Camera & Lenses</option>
                   <option>&nbsp;&nbsp;Drones</option>
                   <option>&nbsp;&nbsp;Security Cameras</option>
-                  <option>Games</option>
+                  <optgroup label="Games"></optgroup>
                   <option>&nbsp;&nbsp;Accessories</option>
                   <option>&nbsp;&nbsp;Playstation 4</option>
                   <option>&nbsp;&nbsp;Playstation 5</option>
                   <option>&nbsp;&nbsp;Xbox Series</option>
-                  <option>Headphones</option>
+                  <optgroup label="Headphones"></optgroup>
                   <option>&nbsp;&nbsp;AirPods</option>
                   <option>&nbsp;&nbsp;Gaming Headsets</option>
                   <option>&nbsp;&nbsp;Kids' Headphones</option>
                   <option>&nbsp;&nbsp;Wireless Earbuds</option>
-                  <option>Iwatch</option>
-                  <option>Laptops & Desktops</option>
+                  <optgroup label="Iwatch"></optgroup>
+                  <optgroup label="Laptops & Desktops"></optgroup>
                   <option>&nbsp;&nbsp;Accessories</option>
                   <option>&nbsp;&nbsp;Laptops</option>
                   <option>&nbsp;&nbsp;Monitors</option>
-                  <option>Smart Home</option>
-                  <option>SmartPhone</option>
+                  <optgroup label="Smart Home"></optgroup>
+                  <optgroup label="SmartPhone"></optgroup>
                   <option>&nbsp;&nbsp;IPhone</option>
                   <option>&nbsp;&nbsp;Prepaid Phone</option>
                   <option>&nbsp;&nbsp;Samsung Galaxy</option>
                   <option>&nbsp;&nbsp;Unlocked Phones</option>
-                  <option>Speakers</option>
+                  <optgroup label="Speakers"></optgroup>
                   <option>&nbsp;&nbsp;Bluetooth Speakers</option>
                   <option>&nbsp;&nbsp;Portable Speakers</option>
                   <option>&nbsp;&nbsp;Professional Speakers</option>
                   <option>&nbsp;&nbsp;Waterproof Speakers</option>
-                  <option>Tablets</option>
-                  <option>Television</option>
+                  <optgroup label="Tablets"></optgroup>
+                  <optgroup label="Television"></optgroup>
                   <option>&nbsp;&nbsp;55" TVs</option>
                   <option>&nbsp;&nbsp;65" TVs</option>
                   <option>&nbsp;&nbsp;OLED TVs</option>
@@ -512,7 +515,7 @@ const Navbar = () => {
                 <span className="h-9 w-1 bg-gray-300 z-40"></span>
                 <input
                   type="text"
-                  className="focus w-[710px] px-4 py-2.5 bg-gray-100 text-gray-700 border-none"
+                  className="focus:ring-0 w-[710px] px-4 py-2.5 bg-gray-100 text-gray-700 border-none"
                   placeholder="Search for products"
                 />
                 <button className="bg-[#0068C8] py-2.5 w-36 px-[30px] text-[16px] text-white font-semibold">SEARCH</button>
@@ -520,15 +523,15 @@ const Navbar = () => {
             </div>
             <div>
               <div className="flex items-center space-x-9">
-                <a href="d-flex align-items-center">
+                <Link to="/whishlist" className="d-flex align-items-center">
                   <div className=" text-4xl relative text-black">
                     <CiHeart />
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                       0
                     </span>
                   </div>
-                </a>
-                <a href="#" className="flex items-center space-x-1 d-flex align-items-center">
+                </Link>
+                <Link to="/registerpage" className="flex items-center space-x-1 d-flex align-items-center">
                   <i className="text-3xl text-black">
                     <FiUser />
                   </i>
@@ -538,9 +541,8 @@ const Navbar = () => {
                     </span>
                     <span className="text-sm font-bold text-black">Login</span>
                   </div>
-
-                </a>
-                <a href="#" class="flex items-center space-x-2 d-flex align-items-center">
+                </Link>
+                <Link to="/cart" class="flex items-center space-x-2 d-flex align-items-center">
                   <div className="text-3xl relative text-black">
                     <BsCart3 />
                     <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
@@ -551,7 +553,7 @@ const Navbar = () => {
                     <span className="text-[#000] text-[12px]">My Cart</span>
                     <span className="text-sm font-bold text-black">$0.00</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -588,6 +590,9 @@ const Navbar = () => {
               </a>
             </ul>
           </div>
+        </div>
+        <div>
+          
         </div>
       </nav>
     </div>
