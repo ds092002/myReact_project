@@ -40,7 +40,7 @@ const ContactUS = () => {
                     <div>
                         <form>
                             <input type="checkbox" id="" className="hidden display:none" name="botcheck" />
-                            <div class="lg:mb-5 mb-3 lg:flex space-y-4 gap-4">
+                            <div class="lg:mb-5 mb-3 lg:flex gap-4">
                                 <input type="text" placeholder="Name*" autocomplete="false"
                                     class="w-full px-6 py-2.5 border-none placeholder:text-[#848484] bg-[#F4F4F4] rounded-md placeholder:text-base"
                                     name="name" />

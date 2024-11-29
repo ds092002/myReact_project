@@ -126,7 +126,7 @@ const Home = () => {
         <div>
           <h2 className="text-black font-bold ">Deals of the day</h2>
           <hr className="w-full lg:w-full"/>
-          <div className="flex justify-center mt-4">
+          <div className="mt-4">
             <DealOfTheDay/>
           </div>
         </div>
