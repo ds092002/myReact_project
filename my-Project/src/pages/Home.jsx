@@ -358,7 +358,7 @@ const Home = () => {
           <div className="grid grid-cols-3 relative">
             {/* left Side Card */}
             <div className="flex self-center">
-              <div className="grid grid-cols-2 gap-20">
+              <div className="grid grid-cols-2 gap-x-20">
                 <div className="">
                   <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                     <a href="" className="relative">
@@ -456,8 +456,8 @@ const Home = () => {
 
             {/* middle Banner */}
             <div className="relative">
-              <img src={banner} alt="Banner" className="w-80  rounded-md ml-16" />
-              <div className="absolute bottom-32 left-10">
+              <img src={banner} alt="Banner" className="w-72  rounded-md mt-2 ml-20" />
+              <div className="absolute bottom-32 left-28">
               <p className="text-[#fff] bg-red-600 lg:text-sm sm:text-[11px] px-2 w-28 rounded-tr-md rounded-b-md">SAVE EXTRA</p>
               <p className="text-black text-3xl font-bold mb-4">15% OFF 
               <br />
@@ -471,7 +471,7 @@ const Home = () => {
             </div>
             {/* Right Side Card */}
             <div className="flex self-center">
-              <div className="grid grid-cols-2 gap-20">
+              <div className="grid grid-cols-2 gap-x-20">
                 <div className="">
                   <div className="hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                     <a href="" className="relative">
@@ -613,31 +613,39 @@ const Home = () => {
       </div>
 
 
-      <div className="mt-24 lg:mx-56 lg:px-0 px-2">
-        <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-32">
-          <div>
-            <p className="lg:text-3xl text-2xl font-bold text-black">Trending Products</p>
-            <hr className="lg:w-96" />
-            <HomeHrProduct/>
-            <HomeHrProduct/>
-            <HomeHrProduct/>
-          </div>
-          <div>
-            <p className="lg:text-3xl text-2xl font-bold text-black">New Products</p>
-            <hr className="lg:w-96" />
-            <HomeHrProduct/>
-            <HomeHrProduct/>
-            <HomeHrProduct/>
-          </div>
-          <div>
-            <p className="lg:text-3xl text-2xl font-bold text-black">Top Rated</p>
-            <hr className="lg:w-96" />
-             <HomeHrProduct/>
-             <HomeHrProduct/>
-             <HomeHrProduct/>
-          </div>
+
+    <div className="mt-24 lg:mx-56 container">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-x-14 gap-8">
+        {/* Trending Products Section */}
+        <div>
+          <p className="lg:text-3xl text-2xl font-bold text-black">Trending Products</p>
+          <hr className="lg:w-96 w-72 border-t-2 mt-2" />
+          <HomeHrProduct />
+          <HomeHrProduct />
+          <HomeHrProduct />
+        </div>
+
+        {/* New Products Section */}
+        <div>
+          <p className="lg:text-3xl text-2xl font-bold text-black">New Products</p>
+          <hr className="lg:w-96 w-72 border-t-2 mt-2" />
+          <HomeHrProduct />
+          <HomeHrProduct />
+          <HomeHrProduct />
+        </div>
+
+        {/* Top Rated Section */}
+        <div>
+          <p className="lg:text-3xl text-2xl font-bold text-black">Top Rated</p>
+          <hr className="lg:w-96 w-72 border-t-2 mt-2" />
+          <HomeHrProduct />
+          <HomeHrProduct />
+          <HomeHrProduct />
         </div>
       </div>
+      </div>
+    
+
 
       <div className="lg:mt-24 mt-16 border">
         <div className="relative">
