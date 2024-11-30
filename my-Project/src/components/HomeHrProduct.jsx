@@ -4,20 +4,20 @@ import macBook2 from '../assets/macbook2.jpg'; // Path to your image
 
 const HomeHrProduct = () => {
   return (
-    <div className="flex flex-row items-center mt-4 bg-white border">
+    <div className="flex flex-row items-center mt-4 bg-white">
       {/* Product Image */}
-      <div className="w-1/2 border"> {/* Decrease width of image container */}
+      <div className="w-1/2"> {/* Decrease width of image container */}
         <a href="">
           <img
             src={macBook2}
             alt="Laptop"
-            className="rounded-md" // Increase image width and height
+            className="" // Increase image width and height
           />
         </a>
       </div>
 
       {/* Product Details */}
-      <div className="w-2/3 p-4 border"> {/* Decrease text container width */}
+      <div className="w-2/3 p-4"> {/* Decrease text container width */}
         <p className="text-sm text-[#848484] mb-1.5">Laptops</p>
         <p className="text-[#000] font-semibold text-base mb-1.5 break-words">
           MacBook Pro 13.3" 16GB/512GB Silver
