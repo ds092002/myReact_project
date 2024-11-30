@@ -478,7 +478,7 @@ const Home = () => {
     {/* Dashed Border with Text */}
     <div className="absolute inset-0 flex justify-center items-center">
       <div className="border-2 border-dashed border-white rounded-lg w-[94%] h-20 flex justify-center items-center text-center">
-        <p className="text-2xl sm:text-2xl lg:text-2xl text-white font-semibold">
+        <p className="text-2xl sm:text-2xl lg:text-2xl text-white font-semibold m-0">
           Free Shipping On Order Over $500 - Using code: Freeship
         </p>
       </div>
