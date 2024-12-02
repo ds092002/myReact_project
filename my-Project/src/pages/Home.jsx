@@ -471,51 +471,51 @@ const Home = () => {
 
 
       <div className="mt-24 container">
-  <div className="relative">
-    {/* Background Image */}
-    <img src={watch} className="rounded-lg w-full h-auto object-cover" alt="background" />
-    
-    {/* Dashed Border with Text */}
-    <div className="absolute inset-0 flex justify-center items-center">
-      <div className="border-2 border-dashed border-white rounded-lg w-[94%] h-20 flex justify-center items-center text-center">
-        <p className="text-2xl sm:text-2xl lg:text-2xl text-white font-semibold m-0">
-          Free Shipping On Order Over $500 - Using code: Freeship
-        </p>
+        <div className="relative">
+          {/* Background Image */}
+          <img src={watch} className="rounded-lg w-full h-auto object-cover" alt="background" />
+
+          {/* Dashed Border with Text */}
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="border-2 border-dashed border-white rounded-lg w-[94%] h-20 flex justify-center items-center text-center">
+              <p className="text-2xl sm:text-2xl lg:text-2xl text-white font-semibold m-0">
+                Free Shipping On Order Over $500 - Using code: Freeship
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
 
 
 
       <div className="mt-24 container">
         <div className="flex gap-20">
-          <div className="flex items-start">
+          <div className="flex items-start ">
             <i className="text-8xl text-[#0068C8] mt-3"><TbTruckDelivery /></i>
             <div className="ml-7 text-center py-7 flex flex-col items-start">
-              <p className="text-base text-black font-semibold ">FREE DELIVERY</p>
+              <p className="text-base text-black font-bold m-0">FREE DELIVERY</p>
               <p className="text-sm text-black">Free Shiping on all order</p>
             </div>
           </div>
           <div className="flex items-start">
             <i className="text-8xl text-[#0068C8] mt-3"><TbCoin /></i>
             <div className="ml-7 text-center py-7 flex flex-col items-start">
-              <p className="text-base text-black font-semibold ">RETURNS</p>
+              <p className="text-base text-black font-bold m-0">RETURNS</p>
               <p className="text-sm text-black">Back guaranted under 7 days</p>
             </div>
           </div>
           <div className="flex items-start">
             <i className="text-8xl text-[#0068C8] mt-3"><BsHeadset /></i>
             <div className="ml-7 text-center py-7 flex flex-col items-start">
-              <p className="text-base text-black font-semibold ">Support 24/7</p>
+              <p className="text-base text-black font-bold m-0">Support 24/7</p>
               <p className="text-sm text-black">Support online 24 hours a day</p>
             </div>
           </div>
           <div className="flex items-start">
             <i className="text-8xl text-[#0068C8] mt-3"><PiCreditCard /></i>
             <div className="ml-7 text-center py-7 flex flex-col items-start">
-              <p className="text-base text-black font-semibold ">Payments</p>
+              <p className="text-base text-black font-bold m-0">Payments</p>
               <p className="text-sm text-black">100% payment security</p>
             </div>
           </div>
