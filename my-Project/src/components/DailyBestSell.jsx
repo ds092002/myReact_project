@@ -1,14 +1,14 @@
 import React from "react";
 import macBook2 from "../assets/macbook2.jpg";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaHeart, FaSearch, FaSyncAlt, FaShoppingCart } from "react-icons/fa";
 
 const DailyBestSell = () => {
   return (
     <div className="w-[200px]">
-      <div className="hover:border-1 h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center relative group">
+      <div className="group hover:border-1 h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center relative group">
         <a href="" className="relative w-full h-full">
           <img
-            src={macBook2}
+            src={macBook2} // Ensure this is correctly linked to the image
             alt="Laptop"
             className="h-full w-full rounded-t-md object-cover"
           />
@@ -21,31 +21,31 @@ const DailyBestSell = () => {
           </p>
         </a>
 
-        {/* Hover Icons */}
-        <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 bg-black/40 rounded-lg transition-opacity duration-300">
+        {/* Hover Icons - Vertical Right Side */}
+        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 flex flex-col items-center gap-3 z-50 opacity-0 group-hover:opacity-100 p-2 rounded-lg transition-opacity duration-300">
           <button
-            className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
+            className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-100"
             aria-label="Add to Wishlist"
           >
-            ❤️
+            <FaHeart className="" />
           </button>
           <button
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
             aria-label="Quick View"
           >
-            🔍
+            <FaSearch className="" />
           </button>
           <button
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
             aria-label="Add to Compare"
           >
-            🌀
+            <FaSyncAlt className="" />
           </button>
           <button
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
             aria-label="Add to Cart"
           >
-            🛒
+            <FaShoppingCart className="" />
           </button>
         </div>
       </div>
