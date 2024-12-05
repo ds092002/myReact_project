@@ -52,21 +52,6 @@ import { PiCreditCard } from "react-icons/pi";
 
 
 const Home = () => {
-  const logo = [
-    { src: panasonic, alt: "panasonic" },
-    { src: sony, alt: "sony" },
-    { src: asus, alt: "asus" },
-    { src: samsung, alt: "samsung" },
-    { src: sanyo, alt: "sanyo" },
-    { src: oppo, alt: "oppo" },
-    { src: dell, alt: "dell" },
-    { src: lenovo, alt: "lenovo" },
-    { src: apple, alt: "apple" },
-    { src: jbl, alt: "jbl" },
-    { src: canon, alt: "canon" },
-    { src: intel, alt: "itel" },
-  ];
-
   return (
     <div className="mt-10">
       <div className="mx-2">
@@ -118,12 +103,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="mt-5 flex justify-center items-center mx-2">
+      <div className="mt-5 flex justify-center items-center mx-2">
         <Company />
-      </div> */}
+      </div>
 
       {/* Deal Of The Day */}
-      {/* <div className="mt-24 container mb-16">
+      <div className="mt-24 container mb-16">
         <div>
           <h2 className="text-black font-bold ">Deals of the day</h2>
           <hr className="w-full lg:w-full" />
@@ -131,7 +116,7 @@ const Home = () => {
             <DealOfTheDay />
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Daily Best Sells */}
       {/* <div className="p-20 container mt-[-150px]">
