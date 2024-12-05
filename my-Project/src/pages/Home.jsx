@@ -118,12 +118,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-5 flex justify-center items-center mx-2">
+      {/* <div className="mt-5 flex justify-center items-center mx-2">
         <Company />
-      </div>
+      </div> */}
 
       {/* Deal Of The Day */}
-      <div className="mt-24 container mb-16">
+      {/* <div className="mt-24 container mb-16">
         <div>
           <h2 className="text-black font-bold ">Deals of the day</h2>
           <hr className="w-full lg:w-full" />
@@ -131,17 +131,17 @@ const Home = () => {
             <DealOfTheDay />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Daily Best Sells */}
-      <div className="p-20 container mt-[-150px]">
+      {/* <div className="p-20 container mt-[-150px]">
         <div>
           <h2 className="text-black font-semibold">Daily Best Sells</h2>
           <hr />
         </div>
         <div className="">
           <div className="grid grid-cols-3 relative">
-            {/* left Side Card */}
+            left Side Card
             <div className="flex self-center">
               <div className="grid grid-cols-2 gap-x-20">
                 <DailyBestSell/>
@@ -151,7 +151,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* middle Banner */}
+            middle Banner
             <div className="relative">
               <img src={banner} alt="Banner" className="w-72  rounded-md mt-2 ml-20" />
               <div className="absolute bottom-32 left-28">
@@ -167,7 +167,7 @@ const Home = () => {
               </div>
             </div>
             
-            {/* Right Side Card */}
+            Right Side Card
             <div className="flex self-center">
               <div className="grid grid-cols-2 gap-x-20">
                <DailyBestSell/> 
@@ -178,10 +178,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="lg:mt-24 mt-20 lg:mb-5 mx-2">
+      {/* <div className="lg:mt-24 mt-20 lg:mb-5 mx-2">
         <div className="">
           <div className="lg:flex grid grid-cols-1 justify-center items-center lg:gap-7 sm:gap-2">
             <div className="relative">
@@ -220,13 +220,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      <div className="mt-24 lg:mx-56 container">
+      {/* <div className="mt-24 lg:mx-56 container">
         <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-x-14 gap-8">
-          {/* Trending Products Section */}
+          Trending Products Section
           <div>
             <p className="lg:text-3xl text-2xl font-bold text-black">Trending Products</p>
             <hr className="lg:w-96 w-72 border-t-2 mt-2" />
@@ -235,7 +235,7 @@ const Home = () => {
             <HomeHrProduct />
           </div>
 
-          {/* New Products Section */}
+          New Products Section
           <div>
             <p className="lg:text-3xl text-2xl font-bold text-black">New Products</p>
             <hr className="lg:w-96 w-72 border-t-2 mt-2" />
@@ -244,7 +244,7 @@ const Home = () => {
             <HomeHrProduct />
           </div>
 
-          {/* Top Rated Section */}
+          Top Rated Section
           <div>
             <p className="lg:text-3xl text-2xl font-bold text-black">Top Rated</p>
             <hr className="lg:w-96 w-72 border-t-2 mt-2" />
@@ -253,11 +253,11 @@ const Home = () => {
             <HomeHrProduct />
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      <div className="lg:mt-24 mt-16 border">
+      {/* <div className="lg:mt-24 mt-16 border">
         <div className="relative">
           <img src={camera} alt="" className="object-cover lg:h-full h-72 w-72 lg:w-full" />
           <div className="absolute top-0 px-64 w-full h-full flex flex-col justify-center items-center lg:justify-start lg:items-start lg:mt-32">
@@ -277,10 +277,10 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="mt-24 container">
+      {/* <div className="mt-24 container">
         <div>
           <h3 className="text-black font-semibold">Recently Viewed Products</h3>
           <hr />
@@ -292,16 +292,16 @@ const Home = () => {
             <RecentalyProductHome />
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      <div className="mt-24 container">
+      {/* <div className="mt-24 container">
         <div className="relative">
-          {/* Background Image */}
+          Background Image
           <img src={watch} className="rounded-lg w-full h-auto object-cover" alt="background" />
 
-          {/* Dashed Border with Text */}
+          Dashed Border with Text
           <div className="absolute inset-0 flex justify-center items-center">
             <div className="border-2 border-dashed border-white rounded-lg w-[94%] h-20 flex justify-center items-center text-center">
               <p className="text-2xl sm:text-2xl lg:text-2xl text-white font-semibold m-0">
@@ -310,12 +310,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
 
-      <div className="mt-24 container">
+      {/* <div className="mt-24 container">
         <div className="flex gap-20">
           <div className="flex items-start ">
             <i className="text-8xl text-[#0068C8] mt-3"><TbTruckDelivery /></i>
@@ -346,7 +346,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
   );
