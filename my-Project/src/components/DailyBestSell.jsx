@@ -7,7 +7,7 @@ const DailyBestSell = () => {
   return (
     <div className="w-[200px]">
       <div className="group relative hover:border-1 h-[210px] hover:border-[#0068C8] rounded-lg flex justify-center items-center">
-        <a href="" className="absolute w-full h-full z-30">
+        <a href="" className="relative w-full h-full z-30">
           <img
             src={macBook2} 
             alt="Laptop"
@@ -22,8 +22,8 @@ const DailyBestSell = () => {
           </p>
         </a>
 
-        <div className="absolute translate group-hover:-translate-x-2 translate-x-0   right-0 top-0 flex flex-col items-center gap-3 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-300">
-        <NavLink to="/wishlist">
+        <div className="absolute translate group-hover:-translate-y-2 translate-y-0 right-0 top-4 flex flex-col items-center gap-3 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-500">
+        <NavLink to="">
           <button
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-100"
             aria-label="Add to Wishlist"

@@ -1,11 +1,17 @@
-import React from 'react';
-import { FaStar } from 'react-icons/fa';
-import macBook2 from '../assets/macbook2.jpg';
+import React from "react";
+import macBook2 from "../assets/macbook2.jpg";
+import {
+  FaStar,
+  FaHeart,
+  FaSearch,
+  FaSyncAlt,
+  FaShoppingCart,
+} from "react-icons/fa";
 
 const RecentalyProductHome = () => {
   return (
     <div className="flex justify-center">
-      <div className="lg:w-[250px] w-full max-w-[300px] overflow-hidden transition-all duration-300 hover:border-[#0068C8]">
+      <div className="group relative lg:w-[250px] w-full max-w-[300px] overflow-hidden transition-all duration-300 hover:border-[#0068C8]">
         <a href="#" className="relative">
           <img
             src={macBook2}
@@ -19,9 +25,40 @@ const RecentalyProductHome = () => {
             HOT
           </p>
         </a>
+
+        <div className="absolute translate group-hover:-translate-y-2 translate-y-0 right-0 top-0 flex flex-col items-center gap-3 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-500 text-lg">
+          <button
+            className="bg-slate-100 p-2 rounded-full border"
+            aria-label="Add to Wishlist"
+          >
+            <FaHeart />
+          </button>
+          <button
+            className="bg-slate-100 p-2 rounded-full border"
+            aria-label="Quick View"
+          >
+            <FaSearch />
+          </button>
+          <button
+            className="bg-slate-100 p-2 rounded-full border"
+            aria-label="Add to Comapre"
+          >
+            <FaSyncAlt />
+          </button>
+          <button
+            className="bg-slate-100 p-2 rounded-full border"
+            aria-label="Add to Cart"
+          >
+            <FaShoppingCart />
+          </button>
+        </div>
+
         <div className="p-4">
           <div className="flex flex-col">
-            <a href="#" className="inline-flex items-center text-sm text-gray-500">
+            <a
+              href="#"
+              className="inline-flex items-center text-sm text-gray-500"
+            >
               Laptops
             </a>
             <a
@@ -39,8 +76,10 @@ const RecentalyProductHome = () => {
           </div>
           <div className="mt-2">
             <p className="text-red-600 text-xl font-semibold">
-              $1527.00{' '}
-              <del className="text-base text-gray-500 font-normal">$1795.00</del>
+              $1527.00{" "}
+              <del className="text-base text-gray-500 font-normal">
+                $1795.00
+              </del>
             </p>
           </div>
         </div>
