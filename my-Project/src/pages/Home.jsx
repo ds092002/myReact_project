@@ -95,7 +95,7 @@ const Home = () => {
           <hr />
         </div>
         <div className="">
-          <div className="grid grid-cols-3 relative">
+          <div className="grid grid-cols-3">
             {/* left Side Card */}
             <div className="flex self-center">
               <div className="grid grid-cols-2 gap-x-20">
