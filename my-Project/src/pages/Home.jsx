@@ -33,7 +33,7 @@ const Home = () => {
                 WEEKEND DEAL
               </p>
               <h1 className="text-black font-black lg:text-5xl sm:text-[25px] text-center">
-                Best Offers From
+                Best Offers From      
                 <br />
                 Games And More
               </h1>
