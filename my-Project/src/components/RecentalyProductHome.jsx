@@ -4,9 +4,9 @@ import {
   FaStar,
   FaHeart,
   FaSearch,
-  FaSyncAlt,
   FaShoppingCart,
 } from "react-icons/fa";
+import { RiStackLine } from "react-icons/ri";
 
 const RecentalyProductHome = () => {
   return (
@@ -26,7 +26,7 @@ const RecentalyProductHome = () => {
           </p>
         </a>
 
-        <div className="absolute translate group-hover:-translate-y-2 translate-y-0 right-0 top-0 flex flex-col items-center gap-3 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-500 text-lg">
+        <div className="absolute translate group-hover:-translate-y-2 translate-y-1 right-0 top-2 flex flex-col items-center gap-2 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-500 text-lg">
           <button
             className="bg-slate-100 p-2 rounded-full border"
             aria-label="Add to Wishlist"
@@ -43,7 +43,7 @@ const RecentalyProductHome = () => {
             className="bg-slate-100 p-2 rounded-full border"
             aria-label="Add to Comapre"
           >
-            <FaSyncAlt />
+            <RiStackLine />
           </button>
           <button
             className="bg-slate-100 p-2 rounded-full border"

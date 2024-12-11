@@ -1,7 +1,9 @@
 import React from "react";
 import macBook2 from "../assets/macbook2.jpg";
-import { FaStar, FaHeart, FaSearch, FaSyncAlt, FaShoppingCart } from "react-icons/fa";
+import { FaStar, FaHeart, FaSearch, FaShoppingCart } from "react-icons/fa";
+import { RiStackLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
+
 
 const DailyBestSell = () => {
   return (
@@ -22,8 +24,8 @@ const DailyBestSell = () => {
           </p>
         </a>
 
-        <div className="absolute translate group-hover:-translate-y-2 translate-y-0 right-0 top-4 flex flex-col items-center gap-3 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-500">
-        <NavLink to="">
+        <div className="absolute translate group-hover:-translate-y-2 translate-y-1 right-0 top-4 flex flex-col items-center gap-2 z-50 opacity-0 group-hover:!opacity-100 p-2 rounded-lg transition duration-500">
+        <NavLink to="/whishlist">
           <button
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-100"
             aria-label="Add to Wishlist"
@@ -41,7 +43,7 @@ const DailyBestSell = () => {
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
             aria-label="Add to Compare"
           >
-            <FaSyncAlt className="" />
+            <RiStackLine className="" />
           </button>
           <button
             className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
