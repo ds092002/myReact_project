@@ -562,9 +562,9 @@ const Navbar = () => {
       </nav>
       <nav>
         <div className="flex items-center justify-between">
-          <div className="flex border-r">
-          <IoMenuOutline />
-            <a href="" className="text-2xl" onMouseEnter={shopCathandleMouseEnter} onMouseLeave={shopCathandleMouseLeave}>
+          <div className="flex">
+          {/* <IoMenuOutline /> */}
+            <a href="" className="text-2xl flex items-center" onMouseEnter={shopCathandleMouseEnter} onMouseLeave={shopCathandleMouseLeave}>
             Shop Categories<MdOutlineKeyboardArrowDown /> 
             {ShopCategoriesvisible && Categories()}
             </a>
